@@ -1,0 +1,1061 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="اختبار توافق الأسماء - اكتشف نسبة التوافق بينك وبين الشخص الذي تحب من خلال الأسماء. اختبار ممتع ورومانسي للترفيه.">
+    <meta name="keywords" content="اختبار توافق الأسماء, حاسبة الحب, توافق الأزواج, اختبار الحب">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="💑 اختبار توافق الأسماء - كويزات عربية">
+    <meta property="og:description" content="اكتشف نسبة التوافق بينك وبين الشخص الذي تحب من خلال الأسماء!">
+    <meta property="og:image" content="https://darlma3rifa.com/assets/name-compatibility.png">
+    <meta property="og:url" content="https://darlma3rifa.com/name_compatibility.html">
+
+    <title>💑 اختبار توافق الأسماء | كويزات عربية</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+        crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+        :root {
+            --primary: #c2185b;
+            --secondary: #7b1fa2;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --surface: #ffffff;
+            --accent: #ffd700;
+            --love-pink: #ff6b9d;
+            --love-purple: #c44569;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Prevent horizontal overflow on all devices */
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /* Ensure all content respects viewport width */
+        img,
+        video,
+        iframe,
+        embed,
+        object {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Prevent text overflow */
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        div,
+        span {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #fafbfc;
+            color: var(--dark);
+            direction: rtl;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(255, 107, 157, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(196, 69, 105, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            margin-bottom: 40px;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo .highlight {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            box-shadow: 0 4px 15px rgba(194, 24, 91, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.05), rgba(196, 69, 105, 0.05));
+            border-radius: 0;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .hero::before {
+            content: '💕';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.02;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--love-pink), var(--love-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Calculator Card */
+        .calculator-card {
+            background: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .calculator-card::before {
+            display: none;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 16px 20px;
+            font-size: 1.05rem;
+            font-family: 'Cairo', sans-serif;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            background: #fafbfc;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--love-pink);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.08);
+        }
+
+        .calculate-btn {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, var(--love-pink), var(--love-purple));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(255, 107, 157, 0.25);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.35);
+        }
+
+        .calculate-btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* Result Section */
+        .result-section {
+            display: none;
+            background: white;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            margin-bottom: 40px;
+            text-align: center;
+            animation: fadeInUp 0.6s ease;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .result-section.show {
+            display: block;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .percentage-circle {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--love-pink), var(--love-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(255, 107, 157, 0.2);
+            position: relative;
+        }
+
+        .percentage-circle::before {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .percentage-number {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--love-pink), var(--love-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+        }
+
+        .result-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .result-description {
+            font-size: 1.3rem;
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .result-advice {
+            background: rgba(255, 107, 157, 0.04);
+            padding: 25px;
+            border-radius: 12px;
+            border-right: 3px solid var(--love-pink);
+            margin: 30px 0;
+            font-size: 1.1rem;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 14px 32px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            font-family: 'Cairo', sans-serif;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .retry-btn {
+            background: #64748b;
+            color: white;
+            box-shadow: 0 2px 8px rgba(100, 116, 139, 0.2);
+        }
+
+        .retry-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
+        }
+
+        .share-btn {
+            background: linear-gradient(135deg, var(--love-pink), var(--love-purple));
+            color: white;
+            box-shadow: 0 2px 8px rgba(255, 107, 157, 0.2);
+        }
+
+        .share-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
+        }
+
+        /* Related Section */
+        .related-section {
+            margin-top: 60px;
+        }
+
+        .related-title {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .related-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--love-pink), var(--love-purple));
+            border-radius: 10px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .related-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .related-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-color: var(--love-pink);
+        }
+
+        .related-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .related-card h4 {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-align: center;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            background: rgba(255, 193, 7, 0.06);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 40px 0;
+            text-align: center;
+            font-size: 1rem;
+            color: #f57c00;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 20px 20px;
+            margin-top: 80px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .copyright {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header-content {
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .cta-btn {
+                padding: 8px 18px;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 50px 15px 40px;
+                margin-bottom: 40px;
+            }
+
+            .hero::before {
+                font-size: 8rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .calculator-card {
+                padding: 25px 15px;
+                margin-bottom: 30px;
+            }
+
+            .input-group {
+                margin-bottom: 20px;
+            }
+
+            .input-group label {
+                font-size: 1rem;
+                margin-bottom: 10px;
+            }
+
+            .input-group input {
+                padding: 14px 16px;
+                font-size: 1rem;
+            }
+
+            .calculate-btn {
+                padding: 16px;
+                font-size: 1.1rem;
+            }
+
+            .result-section {
+                padding: 25px 15px;
+                margin-bottom: 30px;
+            }
+
+            .percentage-circle {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 25px;
+            }
+
+            .percentage-number {
+                font-size: 2.8rem;
+            }
+
+            .result-title {
+                font-size: 1.6rem;
+                margin-bottom: 15px;
+            }
+
+            .result-description {
+                font-size: 1.05rem;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+
+            .result-advice {
+                padding: 20px 15px;
+                font-size: 1rem;
+                margin: 25px 0;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 25px;
+            }
+
+            .action-btn {
+                width: 100%;
+                padding: 14px 24px;
+                font-size: 1rem;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .related-title {
+                font-size: 1.6rem;
+                margin-bottom: 30px;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .related-card h4 {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .disclaimer {
+                padding: 15px;
+                font-size: 0.9rem;
+                margin: 30px 0;
+            }
+
+            .main-footer {
+                padding: 30px 15px 15px;
+                margin-top: 60px;
+            }
+
+            .footer-links {
+                gap: 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .calculator-card {
+                padding: 20px 12px;
+            }
+
+            .result-section {
+                padding: 20px 12px;
+            }
+
+            .percentage-circle {
+                width: 120px;
+                height: 120px;
+            }
+
+            .percentage-number {
+                font-size: 2.4rem;
+            }
+
+            .result-title {
+                font-size: 1.4rem;
+            }
+
+            .result-description {
+                font-size: 0.95rem;
+            }
+
+            .result-advice {
+                padding: 15px 12px;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Ad Placeholder Styles */
+        .ad-placeholder {
+            background: #f1f5f9;
+            border: 2px dashed #cbd5e1;
+            border-radius: 15px;
+            padding: 40px 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-weight: 600;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">كويزات<span class="highlight">عربية</span></a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="index.html#men" class="nav-link">للرجال</a>
+                <a href="index.html#women" class="nav-link">للنساء</a>
+                <a href="index.html#entertainment" class="nav-link">ترفيه</a>
+            </nav>
+
+            <a href="index.html" class="cta-btn">المزيد</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>💑 اختبار توافق الأسماء - احسب نسبة التوافق بينك وبين من تحب</h1>
+            <p>اكتشف نسبة التوافق بينك وبين الشخص الذي تحب من خلال الأسماء!</p>
+        </section>
+
+        <!-- SEO INTRO SECTION -->
+        <div class="calculator-card" style="margin-bottom: 40px;">
+            <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--love-purple); margin-bottom: 20px;">اختبار
+                توافق الأسماء: اكتشف نسبة الانسجام بينك وبين شريك حياتك</h2>
+            <p style="font-size: 1.1rem; line-height: 1.9; color: #475569; margin-bottom: 20px;">
+                منذ القدم والإنسان يبحث عن علامات وإشارات تدله على مصيره العاطفي ومستقبله مع الشخص الذي يحب. في عالمنا
+                العربي الغني بالتقاليد والمعتقدات الرومانسية، يحتل <strong>اختبار توافق الأسماء</strong> مكانة خاصة في
+                قلوب المحبين والباحثين عن الحب الحقيقي. هذا الاختبار الممتع والمثير يعتمد على فكرة أن لكل اسم طاقة
+                وذبذبات خاصة، وأن التوافق بين الأسماء يمكن أن يعكس مدى الانسجام والتفاهم بين شخصين. سواء كنت في بداية
+                علاقة عاطفية وتريد معرفة ما إذا كان هذا الشخص مناسباً لك، أو كنت تبحث عن طريقة ممتعة لقضاء الوقت مع شريك
+                حياتك، فإن <strong>حاسبة توافق الأسماء</strong> ستمنحك تجربة فريدة ومسلية تجمع بين الترفيه والفضول
+                العاطفي. النتائج التي ستحصل عليها ليست عشوائية، بل مبنية على خوارزمية ثابتة تضمن أن نفس الأسماء ستعطي
+                دائماً نفس النتيجة، مما يجعل الاختبار أكثر مصداقية وقابلية للمشاركة مع الأصدقاء والأحباء.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.9; color: #475569; margin-bottom: 20px;">
+                يعتبر <strong>اختبار نسبة التوافق بين الأسماء</strong> من أكثر الاختبارات الرومانسية شعبية على الإنترنت،
+                حيث يجذب ملايين المستخدمين العرب الباحثين عن إجابات حول علاقاتهم العاطفية. ما يميز هذا الاختبار هو
+                بساطته الشديدة وسرعة الحصول على النتائج؛ كل ما تحتاجه هو إدخال اسمك واسم الشخص الذي تحب، والضغط على زر
+                "احسب نسبة التوافق"، لتحصل فوراً على نسبة مئوية تتراوح بين 40% و95% تعكس مستوى التوافق بينكما. النتائج
+                مقسمة إلى أربع فئات رئيسية: <strong>توافق ضعيف</strong> (40-55%) يشير إلى أن العلاقة تحتاج إلى جهد كبير،
+                <strong>توافق متوسط</strong> (56-70%) يعني وجود إمكانيات جيدة مع الحاجة للعمل على العلاقة، <strong>توافق
+                    قوي</strong> (71-85%) يدل على انسجام واضح وفرصة كبيرة للنجاح، و<strong>توافق ممتاز</strong> (86-95%)
+                يعني أنكما مثاليان لبعضكما البعض! كل فئة تأتي مع وصف عاطفي مفصل ونصائح عملية لتحسين العلاقة وتعزيز
+                الانسجام بينكما، مما يجعل التجربة ليست مجرد لعبة بل فرصة للتأمل في طبيعة علاقتك وكيفية تطويرها نحو
+                الأفضل.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.9; color: #475569; margin-bottom: 0;">
+                من أهم مميزات <strong>حاسبة الحب والتوافق بين الأسماء</strong> أنها مصممة خصيصاً للجمهور العربي، مع
+                مراعاة كاملة للغة العربية واتجاه الكتابة من اليمين إلى اليسار (RTL)، مما يضمن تجربة استخدام سلسة ومريحة
+                على جميع الأجهزة. التصميم الرومانسي بألوانه الوردية والبنفسجية الناعمة، مع الرسوم المتحركة السلسة
+                والأيقونات التعبيرية، يخلق جواً من الحب والرومانسية يجعل استخدام الاختبار تجربة ممتعة بصرياً وعاطفياً.
+                بالإضافة إلى ذلك، يمكنك بسهولة مشاركة نتيجتك مع أصدقائك عبر وسائل التواصل الاجتماعي أو نسخ الرابط
+                لإرساله للشخص الذي تحب، مما يجعل الاختبار أداة رائعة لكسر الجليد وبدء محادثات ممتعة حول العلاقات والحب.
+                تذكر دائماً أن هذا الاختبار مصمم للترفيه والمتعة، ولا يعتمد على أسس علمية، لكنه بالتأكيد وسيلة رائعة
+                لإضافة لمسة من المرح والرومانسية إلى يومك. جرب الاختبار الآن واكتشف نسبة التوافق بينك وبين من تحب، وشارك
+                النتيجة مع أحبائك لتخلق ذكريات جميلة ولحظات لا تُنسى!
+            </p>
+        </div>
+
+        <!-- AD 1: AFTER SEO INTRO -->
+        <div style="margin: 40px 0;">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+                crossorigin="anonymous"></script>
+            <!-- ARAB QUIZ 1 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="8984152115" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- CALCULATOR CARD -->
+        <div class="calculator-card">
+            <div class="input-group">
+                <label for="name1">💝 اسمك</label>
+                <input type="text" id="name1" placeholder="أدخل اسمك هنا...">
+            </div>
+
+            <div class="input-group">
+                <label for="name2">💖 اسم الشريك / الشخص الذي تحبه</label>
+                <input type="text" id="name2" placeholder="أدخل اسم الشخص الذي تحبه...">
+            </div>
+
+            <button class="calculate-btn" onclick="calculateCompatibility()">
+                ❤️ احسب نسبة التوافق
+            </button>
+        </div>
+
+        <!-- AD 2: AFTER CALCULATOR -->
+        <div style="margin: 40px 0;">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+                crossorigin="anonymous"></script>
+            <!-- ARAB QUIZ 2 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="7712508440" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- RESULT SECTION -->
+        <div class="result-section" id="resultSection">
+            <div class="percentage-circle">
+                <div class="percentage-number" id="percentageNumber">0%</div>
+            </div>
+
+            <h2 class="result-title" id="resultTitle"></h2>
+            <p class="result-description" id="resultDescription"></p>
+
+            <div class="result-advice" id="resultAdvice"></div>
+
+            <div class="action-buttons">
+                <button class="action-btn retry-btn" onclick="resetCalculator()">
+                    🔄 جرّب أسماء أخرى
+                </button>
+                <button class="action-btn share-btn" onclick="shareResult()">
+                    📤 شارك نتيجتك
+                </button>
+            </div>
+        </div>
+
+        <!-- AD 3: BEFORE RELATED -->
+        <div style="margin: 40px 0;">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+                crossorigin="anonymous"></script>
+            <!-- ARAB QUIZ 3 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="6399426772" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- RELATED SECTION -->
+        <section class="related-section">
+            <h3 class="related-title">اختبارات مشابهة قد تعجبك</h3>
+
+            <div class="related-grid">
+                <a href="quiz_love_arab_country.html" class="related-card">
+                    <img src="THUMBNAILS/ENTERTAINMENT/quiz_love_arab_country.jpeg" class="related-img"
+                        onerror="this.src='https://via.placeholder.com/300x150?text=Quiz'">
+                    <h4>في أي دولة عربية ستجد حب حياتك؟</h4>
+                </a>
+
+                <a href="quiz_future_wife_look.html" class="related-card">
+                    <img src="THUMBNAILS/ENTERTAINMENT/quiz_future_wife_look.jpeg" class="related-img"
+                        onerror="this.src='https://via.placeholder.com/300x150?text=Quiz'">
+                    <h4>كيف ستبدو زوجتك المستقبلية؟</h4>
+                </a>
+
+                <a href="quiz_children_count.html" class="related-card">
+                    <img src="THUMBNAILS/ENTERTAINMENT/quiz_children_count.jpeg" class="related-img"
+                        onerror="this.src='https://via.placeholder.com/300x150?text=Quiz'">
+                    <h4>كم عدد الأطفال الذين سيكونون لديك؟</h4>
+                </a>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER -->
+        <div class="disclaimer">
+            ⚠️ هذا الاختبار للترفيه فقط ولا يعتمد على أسس علمية
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">من نحن</a>
+                <a href="privacy.html" class="footer-link">سياسة الخصوصية</a>
+                <a href="terms.html" class="footer-link">شروط الاستخدام</a>
+                <a href="contact.html" class="footer-link">تواصل معنا</a>
+            </div>
+            <p class="copyright">&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script>
+        // Consistent hash function for name compatibility
+        function hashString(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                const char = str.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash; // Convert to 32bit integer
+            }
+            return Math.abs(hash);
+        }
+
+        function calculateCompatibility() {
+            const name1 = document.getElementById('name1').value.trim();
+            const name2 = document.getElementById('name2').value.trim();
+
+            // Validation
+            if (!name1 || !name2) {
+                alert('⚠️ الرجاء إدخال الاسمين للحصول على النتيجة');
+                return;
+            }
+
+            if (name1.length < 2 || name2.length < 2) {
+                alert('⚠️ الرجاء إدخال أسماء صحيحة (حرفين على الأقل)');
+                return;
+            }
+
+            // Normalize names (lowercase and sort alphabetically for consistency)
+            const normalizedNames = [name1.toLowerCase(), name2.toLowerCase()].sort();
+            const combinedString = normalizedNames.join('');
+
+            // Generate consistent percentage (40-95%)
+            const hash = hashString(combinedString);
+            const percentage = 40 + (hash % 56); // Range: 40-95
+
+            // Display result
+            displayResult(percentage, name1, name2);
+
+            // Scroll to result
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function displayResult(percentage, name1, name2) {
+            const resultSection = document.getElementById('resultSection');
+            const percentageNumber = document.getElementById('percentageNumber');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultDescription = document.getElementById('resultDescription');
+            const resultAdvice = document.getElementById('resultAdvice');
+
+            // Animate percentage
+            percentageNumber.textContent = percentage + '%';
+
+            // Determine category
+            let emoji, title, description, advice;
+
+            if (percentage >= 86) {
+                emoji = '💍';
+                title = `${emoji} توافق ممتاز`;
+                description = `نسبة التوافق بين ${name1} و ${name2} رائعة جداً! هذا يشير إلى علاقة قوية مليئة بالحب والانسجام. أنتما مثاليان لبعضكما البعض!`;
+                advice = '💝 نصيحة: استمرا في بناء هذه العلاقة الجميلة بالصدق والاحترام المتبادل. المستقبل يحمل لكما الكثير من السعادة!';
+            } else if (percentage >= 71) {
+                emoji = '❤️';
+                title = `${emoji} توافق قوي`;
+                description = `التوافق بين ${name1} و ${name2} قوي ومبشر! هناك انسجام واضح وفرصة كبيرة لعلاقة ناجحة ومستقرة. استمرا في التواصل الجيد.`;
+                advice = '💕 نصيحة: اعملا معاً على تعزيز نقاط القوة في علاقتكما، وكونا صبورين مع بعضكما البعض في الأوقات الصعبة.';
+            } else if (percentage >= 56) {
+                emoji = '💛';
+                title = `${emoji} توافق متوسط`;
+                description = `التوافق بين ${name1} و ${name2} متوسط. هناك إمكانيات جيدة، لكن العلاقة تحتاج إلى جهد من الطرفين لتحقيق الانسجام الكامل.`;
+                advice = '🌟 نصيحة: ركزا على التواصل الصريح وفهم احتياجات بعضكما البعض. الحب الحقيقي يحتاج إلى عمل وتفاني.';
+            } else {
+                emoji = '💔';
+                title = `${emoji} توافق ضعيف`;
+                description = `التوافق بين ${name1} و ${name2} يحتاج إلى الكثير من العمل. قد تواجهان بعض التحديات، لكن لا شيء مستحيل مع الحب الحقيقي والإرادة القوية.`;
+                advice = '💪 نصيحة: إذا كنتما تحبان بعضكما حقاً، فلا تدعا الأرقام تحبطكما. العلاقات الناجحة تُبنى على الجهد المشترك والتفاهم.';
+            }
+
+            resultTitle.textContent = title;
+            resultDescription.textContent = description;
+            resultAdvice.textContent = advice;
+
+            // Show result section with animation
+            resultSection.classList.add('show');
+        }
+
+        function resetCalculator() {
+            document.getElementById('name1').value = '';
+            document.getElementById('name2').value = '';
+            document.getElementById('resultSection').classList.remove('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function shareResult() {
+            const percentage = document.getElementById('percentageNumber').textContent;
+            const name1 = document.getElementById('name1').value;
+            const name2 = document.getElementById('name2').value;
+            const text = `💑 نسبة التوافق بين ${name1} و ${name2} هي ${percentage}! جرب الاختبار الآن:`;
+            const url = window.location.href;
+
+            // Try to use Web Share API
+            if (navigator.share) {
+                navigator.share({
+                    title: 'اختبار توافق الأسماء',
+                    text: text,
+                    url: url
+                }).catch(() => {
+                    // Fallback to copy
+                    copyToClipboard(text + ' ' + url);
+                });
+            } else {
+                // Fallback to copy
+                copyToClipboard(text + ' ' + url);
+            }
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('✅ تم نسخ النتيجة! يمكنك مشاركتها الآن');
+            }).catch(() => {
+                alert('⚠️ حدث خطأ في النسخ. الرجاء المحاولة مرة أخرى');
+            });
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('name1').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') calculateCompatibility();
+        });
+
+        document.getElementById('name2').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') calculateCompatibility();
+        });
+    </script>
+</body>
+
+</html>

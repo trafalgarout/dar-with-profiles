@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف شخصي - تعارف بنات</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+        :root {
+            --primary: #E91E63;
+            --secondary: #880E4F;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --surface: #ffffff;
+            --accent: #ffd700;
+            --text-gray: #64748b;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            min-height: 100vh;
+        }
+
+        /* --- GLOBAL HEADER STYLES (From Index) --- */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo .highlight {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: #f1f5f9;
+            border-radius: 30px;
+            padding: 5px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 5px;
+            font-family: inherit;
+            width: 150px;
+            font-size: 0.9rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        @media (max-width: 900px) {
+
+            .nav-menu,
+            .search-box {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+
+        /* --- PROFILE SPECIFIC STYLES --- */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--surface);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-bottom: 80px;
+        }
+
+        .profile-header {
+            position: relative;
+            height: auto;
+            min-height: 400px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .header-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            padding: 100px 20px 30px;
+            color: white;
+        }
+
+        .name-title {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            margin-top: 5px;
+            opacity: 0.9;
+            font-weight: 600;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            backdrop-filter: blur(5px);
+            z-index: 10;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--primary);
+        }
+
+        .content-section {
+            padding: 30px 25px;
+            border-bottom: 10px solid var(--light);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark);
+        }
+
+        .traits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .trait-item {
+            background: #fdf2f8;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            color: var(--secondary);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .trait-icon {
+            font-size: 1.4rem;
+        }
+
+        .likes-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .like-card {
+            background: #ecfdf5;
+            color: #065f46;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .dislike-card {
+            background: #fef2f2;
+            color: #991b1b;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .engagement-box {
+            background: linear-gradient(135deg, #FFF0F5, #ffeaf2);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            display: block;
+            /* For Profile Page buttons */
+            width: 100%;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(233, 30, 99, 0.3);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        /* ADJUSTMENT FOR HEADER CTA BTN to NOT be full width */
+        .header-actions .cta-btn {
+            width: auto;
+            margin-top: 0;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+        }
+
+        .cta-btn:active,
+        .header-actions .cta-btn:active {
+            transform: scale(0.98);
+        }
+
+        .poll-options {
+            margin-top: 20px;
+        }
+
+        .poll-option {
+            background: white;
+            border: 2px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: 700;
+        }
+
+        .poll-option.selected {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* --- GLOBAL FOOTER STYLES (From Index) --- */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 0;
+            /* Adjusted for profile container */
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-right: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- GLOBAL HEADER -->
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">كويزات<span class="highlight">عربية</span></a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="index.html#men" class="nav-link">للرجال</a>
+                <a href="index.html#women" class="nav-link">للنساء</a>
+                <a href="index.html#entertainment" class="nav-link">ترفيه</a>
+                <a href="index.html#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن اختبار...">
+                    <button style="background:none;border:none;cursor:pointer;">🔍</button>
+                </div>
+                <a href="index.html#men" class="cta-btn">ابدأ الآن</a>
+            </div>
+
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <a href="index.html#banat" class="back-btn">✕</a>
+
+        <!-- AD 1: ABOVE PROFILE PICTURE -->
+        <div class="ad-separator" style="padding: 10px; text-align: center; background: #fff;">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+                crossorigin="anonymous"></script>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="8984152115" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Header -->
+        <div class="profile-header">
+            <img id="p-img" src="" class="profile-img" alt="Profile">
+            <div class="header-overlay">
+                <h1 class="name-title" id="p-name">Loading...</h1>
+                <div class="tagline" id="p-tagline">...</div>
+            </div>
+        </div>
+
+        <!-- AD 2: BELOW PROFILE PICTURE -->
+        <div class="ad-separator" style="margin: 10px 0; text-align: center;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="7712508440" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Bio Section -->
+        <div class="content-section">
+            <div class="bio-text" id="p-bio">
+                ...
+            </div>
+        </div>
+
+        <!-- AD 3: AFTER BIO -->
+        <div class="ad-separator" style="margin: 10px 0; text-align: center;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="8984152115" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Personality Section -->
+        <div class="content-section">
+            <div class="section-title">💖 شخصيتها</div>
+            <ul class="traits-list" id="p-traits">
+                <!-- Dynamic Content -->
+            </ul>
+        </div>
+
+        <!-- AD 4: AFTER PERSONALITY -->
+        <div class="ad-separator" style="margin: 10px 0; text-align: center;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="7712508440" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Likes/Dislikes Section -->
+        <div class="content-section">
+            <div class="section-title">🎯 تحب وتكره</div>
+            <div class="likes-grid">
+                <div class="like-card">✅ <span id="p-like1">...</span></div>
+                <div class="like-card">✅ <span id="p-like2">...</span></div>
+                <div class="dislike-card">🚫 <span id="p-dislike1">...</span></div>
+                <div class="dislike-card">🚫 <span id="p-dislike2">...</span></div>
+            </div>
+        </div>
+
+        <!-- AD 5: AFTER LIKES -->
+        <div class="ad-separator" style="margin: 10px 0; text-align: center;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="8984152115" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Relationship Style -->
+        <div class="content-section">
+            <div class="section-title">💍 في الحب والعلاقة</div>
+            <div class="bio-text"
+                style="background:#FFF0F5; padding:20px; border-radius:15px; border-right:5px solid var(--primary);">
+                <span id="p-relationship">...</span>
+            </div>
+        </div>
+
+        <!-- AD 6: AFTER RELATIONSHIP -->
+        <div class="ad-separator" style="margin: 10px 0; text-align: center;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="7712508440" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="content-section">
+            <div class="engagement-box">
+                <h3 style="margin:0 0 10px 0; color:var(--dark);">❓ هل <span id="p-name-cta">هي</span> تناسبك؟</h3>
+                <p style="color:var(--text-gray); margin-bottom:20px;">اكتشف نسبة التوافق بينكما الآن 👇</p>
+                <a href="quiz_quick_deep_test.html" class="cta-btn">🔍 اختبار التوافق</a>
+            </div>
+        </div>
+
+        <!-- AD 7: BEFORE POLL -->
+        <div class="ad-separator" style="margin: 10px 0; text-align: center;">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271"
+                data-ad-slot="8984152115" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Poll Section -->
+        <div class="content-section" style="padding-bottom:100px;">
+            <div class="section-title">📊 رأيك يهمنا</div>
+            <h4 style="margin:0 0 15px 0;">هل تفضل الارتباط بفتاة تملك هذه المواصفات؟</h4>
+            <div class="poll-options" id="poll-area">
+                <div class="poll-option" onclick="vote(this)">نعم، جداً 😍</div>
+                <div class="poll-option" onclick="vote(this)">نوعاً ما 🤔</div>
+                <div class="poll-option" onclick="vote(this)">لا، لا تناسبني ✋</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color:white;margin-bottom:15px;">كويزات<span class="highlight">عربية</span>
+                </div>
+                <p style="color:#cbd5e1;line-height:1.6;">منصة ترفيهية تعليمية تساعدك على اكتشاف نفسك وفهم علاقاتك بشكل
+                    أفضل من خلال اختبارات ممتعة ودقيقة.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>اكتشف</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#men">الأكثر رواجاً</a></li>
+                    <li><a href="index.html#men">جديدنا</a></li>
+                    <li><a href="index.html#men">اختبارات الحب</a></li>
+                    <li><a href="index.html#men">تحليل الشخصية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>معلومات</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="terms.html">شروط الاستخدام</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container" style="box-shadow:none; min-height:auto; background:transparent; padding-bottom:0;">
+                <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+                <p class="disclaimer">لأغراض الترفيه واكتشاف الذات فقط</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/banat_data.js"></script>
+    <script>
+        // --- MOBILE MENU ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-btn');
+            const menu = document.querySelector('.nav-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                    btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
+                });
+            }
+        });
+
+        // --- DATA SETS ---
+        const names = ["ليان", "مريم", "نور", "سارة", "ريم", "ياسمين", "هبة", "آية", "سلمى", "دانا", "جوري", "لين", "فاطمة", "شهد", "غلا"];
+
+        const taglines = [
+            "فتاة هادئة تخفي شخصية قوية 💫",
+            "قلبها طيب… لكن لا تحب التعلق السريع",
+            "تحب الاهتمام أكثر من الكلام",
+            "غامضة قليلاً، لكنها مخلصة جداً",
+            "عفوية، ضحكتها تملأ المكان حياة",
+            "رومانسية وحالمة، تبحث عن حب حقيقي",
+            "عقلانية، لا تعطي ثقتها بسهولة"
+        ];
+
+        const bios = [
+            `فتاة تتميز بعمق التفكير والبحث عن المعاني الحقيقية في كل تفاصيل الحياة. لا تستهويها العلاقات العابرة أو الأحاديث السطحية التي لا طائل منها، بل تبحث دائمًا عن تواصل روحي وفكري يلامس أعماق قلبها وعقلها. تؤمن بأن الحب الحقيقي هو ذلك الذي يُبنى على التفاهم المتبادل والاحترام وقبول الآخر كما هو دون محاولة تغييره. في حياتها اليومية، تجدها مهتمة جداً بالتفاصيل الصغيرة التي قد لا ينتبه لها الآخرون، فهي ترى الجمال في البساطة وفي اللحظات العفوية الصادقة.
+
+            على الصعيد العاطفي، هي شريكة مخلصة جداً، تعطي بلا حدود لمن يستحق، ولكنها في المقابل تنتظر تقديراً واهتماماً يوازي ما تقدمه. لديها طموح لا يتوقف عند حد معين، وتسعى دائماً لتطوير نفسها وشخصيتها، مما يجعلها ملهمة جداً لشريك حياتها. تبحث عن رجل قوي الشخصية، حنون القلب، يستطيع أن يكون لها سنداً وصديقاً وحبيباً في آن واحد. إذا كنت تبحث عن علاقة جادة ومستقرة مع فتاة ناضجة عاطفياً وفكرياً، فقد تكون هي الشريكة المثالية التي طالما بحثت عنها.`,
+
+            `رومانسية حالمة، تعيش حياتها بقلب مفتوح ومشاعر فياضة، لكنها في الوقت نفسه تمتلك عقلاً راجحاً وذكاءً عاطفياً عالياً يمكنها من التمييز بين الصادق والمخادع. تعشق الهدوء والطبيعة، وتجد راحتها النفسية في الأماكن البسيطة بعيداً عن صخب المدينة وتصنع البشر. بالنسبة لها، الزواج ليس مجرد ارتباط اجتماعي، بل هو رحلة مقدسة من المودة والرحمة والمشاركة في كل شي.
+
+            تتميز بشخصية حساسة ورقيقة، تتأثر بالكلمة الطيبة واللفتة البسيطة، وتعتبر أن الاهتمام هو أعلى درجات الحب. رغم رقتها، فهي قوية جداً في المواقف الصعبة، وتستطيع أن تكون السند الذي لا يميل لشريكها في أوقات الأزمات. تحب رجلاً يقدّر أنوثتها، ويحترم مشاعرها، ويشاركها اهتماماتها البسيطة مثل القراءة أو المشي تحت المطر أو مشاهدة الأفلام القديمة. هي فتاة تبحث عن الأمان والاستقرار قبل البحث عن العاطفة المشتعلة، لأنها تؤمن أن الحب الذي يدوم هو الحب الهادئ والمطمئن.`,
+
+            `شخصية مستقلة وقوية، واثقة من نفسها ومن خياراتها في الحياة. لا تقبل أن تكون مجرد رقم هامشي في حياة من تحب، بل تريد أن تكون الأولوية والأساس. لديها طموح عملي وشخصي كبير، وتسعى دائماً لتحقيق أهدافها بجد واجتهاد. في العلاقات، هي واضحة وصريحة جداً، لا تحب الالتواء أو الألعاب العاطفية، وتفضل المصارحة حتى لو كانت قاسية على المجاملات المزيفة.
+
+            رغم قوتها الظاهرة، إلا أنها تخفي بداخلها قلباً طيباً وحنوناً جداً لا يظهر إلا لمن يستحق ثقتها الكاملة. تبحث عن شريك حياة واثق من نفسه، طموح، وناجح، لا يخشى قوة شخصيتها بل يفتخر بها ويدعمها. تؤمن بالمشاركة والندية في العلاقة، وترفض فكرة التملك أو السيطرة من أي طرف. إذا كنت رجلاً يبحث عن شريكة حياة تكون حليفة له في معركة الحياة، تشاركه التفكير والتخطيط والنجاح، فهي بالتأكيد الخيار الأنسب لك.`,
+
+            `عفوية، مرحة، وضحكتها تملأ المكان بهجة وحياة. تتعامل مع الحياة ببساطة وتلقائية بعيداً عن التعقيد والحسابات الدقيقة. تكره النكد والدراما، وتحاول دائماً أن تخلق جواً من الإيجابية والسعادة لمن حولها. قلبها أبيض وصافي، لا تعرف طريقاً للحقد أو الكراهية، وتسامح بسرعة لأنها لا تريد أن تلوث روحها بالطاقة السلبية.
+
+            في الحب، هي طفلة كبيرة تبحث عن الدلال والاحتواء. تحب الرجل الذي يشاركها جنونها ومغامراتها، والذي يستطيع أن يضحكها من قلبها. لا تهتم بالمظاهر الخادعة أو الثراء الفاحش بقدر ما تهتم بصدق المشاعر والراحة النفسية. تبحث عن صديق مخلص قبل أن يكون حبيباً، شخص تستطيع أن تكون معه على طبيعتها تماماً دون الحاجة لارتداء أقنعة أو التصنع. علاقتها مبنية على العفوية والصدق والمرح، وهي مستعدة أن تقدم كل ما تملك لإسعاد من تحب، بشرط أن يبادلها نفس القدر من الحب والاهتمام.`,
+
+            `مثقفة، هادئة، وعميقة جداً في نظرتها للحياة. تحب القراءة، الفن، والموسيقى الهادئة. تجد متعتها في النقاشات العميقة التي تغذي العقل والروح، وتبتعد عن السطحية والتفاهة. شخصيتها غامضة نوعاً ما، لا تكشف أوراقها بسهولة، وتحتاج وقتاً لتثق بالآخرين وتسمح لهم بالدخول إلى عالمها الخاص. لكن بمجرد أن تمنح ثقتها، تكون أوفى صديقة وأخلص حبيبة.
+
+            تبحث عن شريك يمتلك عقلاً راجحاً وثقافة واسعة، رجلاً يستطيع أن يفهم صمتها قبل كلامها، ويقدر عالمها الخاص ومساحتها الشخصية. لا تبحث عن علاقة تقليدية روتينية، بل تطمح لعلاقة استثنائية مليئة بالشغف الفكري والعاطفي. ترى في الزواج شراكة روحية وعقلية قبل أي شيء آخر. إذا كنت تستمتع بالحوارات الطويلة، وتقدر المرأة الذكية والمثقفة، ولديك القدرة على احتواء شخصية عميقة وغامضة، فأنت الشخص الذي تنتظره.`,
+
+            `فتاة تقليدية بمعنى إيجابي، تقدس الحياة العائلية وتعتبر بيتها وزوجها وأولادها هم محور حياتها ومصدر سعادتها الحقيقي. تتميز بالحنان المفرط، والصبر، والقدرة العجيبة على التحمل والعطاء دون مقابل. هي الأم المثالية والزوجة السكن التي تجد فيها الراحة والهدوء بعد عناء يوم طويل. تجيد فن الاهتمام والرعاية، وتعرف كيف تخلق جواً من الدفء والحب داخل المنزل.
+
+            لا تغريها أضواء الشهرة أو الحياة الصاخبة، بل تجد سعادتها في الاستقرار والهدوء ولمة العائلة. تبحث عن رجل يحمل صفات الرجولة الحقيقية: الشهامة، الكرم، وتحمل المسؤولية. رجل يكون لها الحماية والسند، وتكون هي له السكن والراحة. تؤمن بأن الحب يترجم إلى أفعال ومواقف وتضحيات، وهي مستعدة أن تفني عمرها لإسعاد أسرتها. إذا كنت تبحث عن الاستقرار العائلي والدفء والمودة والرحمة، فلا شك أنها الفتاة التي تحلم بتكوين أسرة معها.`
+        ];
+
+        const traits = [
+            "هادئة لكن عندما تثق تصبح مرحة",
+            "تغضب بصمت وتسامح بصعوبة",
+            "تحب الاستقرار العائلي جداً",
+            "تكره التجاهل والبرود",
+            "مستمعة جيدة جداً",
+            "غيورة على من تحب",
+            "صريحة ولا تجامل",
+            "حنونة لأقصى درجة"
+        ];
+
+        const likes = [
+            "الرسائل الطويلة", "الاهتمام بدون طلب", "الصراحة المطلقة", "المفاجآت البسيطة",
+            "القهوة والموسيقى", "السفر والمغامرة", "الهدوء والليل", "النقاشات العميقة"
+        ];
+
+        const dislikes = [
+            "الغموض الزائد", "الكذب والمراوغة", "الوعود الفارغة", "التجاهل المتعمد",
+            "الصوت العالي", "البخل في المشاعر", "التحكم الزائد", "السطحية"
+        ];
+
+        const relationships = [
+            "عندما تحب، تعطي من قلبها بلا حدود، لكنها تنسحب فوراً إذا شعرت أنها مجرد خيار ثانٍ.",
+            "الحب بالنسبة لها أفعال لا أقوال. تنتظر من الشريك خطوات جدية وحقيقية.",
+            "تحتاج وقتاً لتثق وتفتح قلبها، لكن بمجرد أن تفعل، ستكون أوفى شريكة في الوجود.",
+            "لا تحب العلاقات المعقدة، تبحث عن البساطة والوضوح والراحة النفسية.",
+            "رومانسية جداً، تحب الدلال والكلمات الحلوة، وتعرف كيف تغرق شريكها بالحب."
+        ];
+
+        // --- LOGIC ---
+
+        function hashCode(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            return Math.abs(hash);
+        }
+
+        function getParam(p) {
+            return new URLSearchParams(window.location.search).get(p);
+        }
+
+        const imgName = getParam('img'); // e.g., "BANAT (55).jpg"
+
+        if (imgName) {
+            // Set Image
+            document.getElementById('p-img').src = `THUMBNAILS/BANAT/${imgName}`;
+
+            // Use Image Name as Seed for Randomness
+            const seed = hashCode(imgName);
+
+            // Generate Consistent Data
+            const name = names[seed % names.length];
+            document.getElementById('p-name').textContent = name;
+            document.getElementById('p-name-cta').textContent = name;
+            document.getElementById('p-tagline').textContent = taglines[seed % taglines.length];
+            document.getElementById('p-bio').textContent = name + " " + bios[seed % bios.length];
+            document.getElementById('p-relationship').textContent = relationships[seed % relationships.length];
+
+            // Traits (Pick 3 unique based on seed)
+            const traitList = document.getElementById('p-traits');
+            let tIndices = new Set();
+            let attempt = 0;
+            while (tIndices.size < 3) {
+                tIndices.add((seed + attempt) % traits.length);
+                attempt++;
+            }
+            tIndices.forEach(i => {
+                const li = document.createElement('li');
+                li.className = 'trait-item';
+                li.innerHTML = `<span class="trait-icon">✨</span> ${traits[i]}`;
+                traitList.appendChild(li);
+            });
+
+            // Likes/Dislikes
+            document.getElementById('p-like1').textContent = likes[seed % likes.length];
+            document.getElementById('p-like2').textContent = likes[(seed + 1) % likes.length];
+            document.getElementById('p-dislike1').textContent = dislikes[seed % dislikes.length];
+            document.getElementById('p-dislike2').textContent = dislikes[(seed + 1) % dislikes.length];
+
+        } else {
+            document.querySelector('.container').innerHTML = "<h2 style='text-align:center;padding:50px;'>عفواً، الملف غير موجود</h2>";
+        }
+
+        // Poll Interaction
+        function vote(el) {
+            const options = document.querySelectorAll('.poll-option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            el.classList.add('selected');
+            el.innerHTML += " <span style='float:left'>✅</span>";
+
+            // Simulate results
+            setTimeout(() => {
+                const pollArea = document.getElementById('poll-area');
+
+                // Get 6 Random Profiles
+                let matchesHTML = '';
+                if (typeof banatImages !== 'undefined') {
+                    // Start from random index
+                    const startIdx = Math.floor(Math.random() * (banatImages.length - 7));
+                    const safeStart = Math.max(0, startIdx);
+                    // Just take a slice for speed, randomness is good enough via startIdx
+                    // Filter out current image
+                    const picks = [];
+                    for (let i = safeStart; i < banatImages.length; i++) {
+                        if (banatImages[i] !== imgName) picks.push(banatImages[i]);
+                        if (picks.length >= 6) break;
+                    }
+
+                    matchesHTML = '<div class="likes-grid" style="margin-top:20px; grid-template-columns: repeat(3, 1fr); align-items: start;">';
+                    picks.forEach(img => {
+                        matchesHTML += `
+                           <a href="profile_view.html?img=${encodeURIComponent(img)}" style="text-decoration:none; color:inherit;">
+                             <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px rgba(0,0,0,0.1); margin-bottom: 10px;">
+                                <img src="THUMBNAILS/BANAT/${img}" style="width:100%; height:auto; display:block;">
+                                <div style="padding:8px; text-align:center; font-size:0.8rem; font-weight:bold;">مشاهدة</div>
+                             </div>
+                           </a>
+                        `;
+                    });
+                    matchesHTML += '</div>';
+                }
+
+                pollArea.innerHTML = `
+                    <div style="text-align:center; padding:10px;">
+                        <h3 style="color:#E91E63; margin-bottom:5px;">شكراً لتصويتك! 😍</h3>
+                        <p style="color:#64748b; font-size:0.9rem;">بناءً على اختيارك، قد تعجبك هؤلاء الفتيات أيضاً:</p>
+                        ${matchesHTML}
+                    </div>
+                `;
+            }, 600);
+        }
+    </script>
+
+</body>
+
+</html>

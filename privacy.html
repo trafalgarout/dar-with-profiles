@@ -1,0 +1,1586 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="سياسة الخصوصية - كويزات عربية. تعرف على كيفية جمع واستخدام وحماية بياناتك الشخصية على منصتنا.">
+    <meta name="keywords" content="سياسة الخصوصية, حماية البيانات, الخصوصية, كويزات عربية">
+
+    <title>سياسة الخصوصية - كويزات عربية</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+        :root {
+            --primary: #c2185b;
+            --secondary: #7b1fa2;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --surface: #ffffff;
+            --accent: #ffd700;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            direction: rtl;
+        }
+
+        /* NEW HEADER STYLES */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo .highlight {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: #f1f5f9;
+            border-radius: 30px;
+            padding: 5px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .search-box:focus-within {
+            border-color: var(--primary);
+            background: white;
+        }
+
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 5px;
+            font-family: inherit;
+            width: 150px;
+            font-size: 0.9rem;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            box-shadow: 0 4px 15px rgba(194, 24, 91, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* FOOTER STYLES */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 80px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-right: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+
+            .nav-menu,
+            .search-box {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* CATEGORY SECTIONS */
+        .category-section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e2e8f0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        /* GRID */
+        .quiz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARDS */
+        .quiz-card {
+            background: var(--surface);
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+            border: 2px solid transparent;
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .card-thumb {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background: #f1f5f9;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .card-meta {
+            font-size: 0.9rem;
+            color: #64748b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .play-btn {
+            background: #f1f5f9;
+            color: var(--primary);
+            padding: 8px 15px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .quiz-card:hover .play-btn {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* PLACEHOLDER MSG */
+        .empty-msg {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            color: #94a3b8;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        /* HERO SECTION - ELEGANT DARK STYLE */
+        .hero {
+            background: #1a1a2e;
+            /* Deep indigo/dark background */
+            position: relative;
+            padding: 100px 20px;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 0 0 50px 50px;
+            /* Curve at bottom only */
+            margin: 0 0 60px 0;
+            /* Remove side margins, stick to top nav sort of, or just margin bottom */
+            color: white;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Abstract decorative blobs */
+        .hero::before,
+        .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.6;
+            animation: float 10s ease-in-out infinite;
+        }
+
+        .hero::before {
+            background: var(--primary);
+            width: 400px;
+            aspect-ratio: 16 / 9; height: auto;
+            top: -100px;
+            right: -100px;
+        }
+
+        .hero::after {
+            background: var(--secondary);
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            left: -50px;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(30px, 50px);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            background: linear-gradient(to right, #fff, #e2e8f0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 45px;
+            color: #cbd5e1;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-btn {
+            background: white;
+            color: var(--primary);
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+            border: 2px solid transparent;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+            background: transparent;
+            border-color: white;
+            color: white;
+        }
+
+        .hero-stats {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-num {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* FEATURES SECTION - ELEGANT ANIMATED */
+        .features {
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out backwards;
+        }
+
+        /* Staggered animation delays */
+        .feature-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .feature-card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .feature-card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(123, 31, 162, 0.1);
+            border-color: rgba(123, 31, 162, 0.1);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.4s;
+            transform-origin: left;
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.4s;
+            font-size: 2.5rem;
+        }
+
+        .feature-card:hover .feature-icon-wrapper {
+            transform: rotateY(180deg);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+
+        .feature-card:hover .feature-icon {
+            color: white;
+            /* When wrapper becomes colored */
+        }
+
+        .feature-icon {
+            display: block;
+            /* Initial color handled by emoji or text color? */
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .feature-card:hover .feature-title {
+            color: var(--primary);
+        }
+
+        .feature-desc {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                padding: 60px 20px;
+                border-radius: 0 0 30px 30px;
+            }
+
+            .hero-stats {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .quiz-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* MOBILE MENU FIX */
+        @media (max-width: 900px) {
+            .nav-menu.active {
+                display: flex !important;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(10px);
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 30px 30px;
+                z-index: 1001;
+                animation: slideDown 0.3s ease;
+            }
+
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: var(--dark);
+            }
+        }
+
+
+        .view-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            color: white;
+            font-size: 0.85em;
+            margin-left: 5px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* ENHANCED DECORATIVE STYLES FOR LEGAL PAGES */
+        
+        /* Page background with subtle pattern */
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(194, 24, 91, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(123, 31, 162, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Enhanced Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            position: relative;
+            padding: 80px 20px;
+            margin-bottom: 60px;
+        }
+        
+        .hero::before {
+            background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+            width: 500px;
+            height: 500px;
+        }
+        
+        .hero::after {
+            background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+            width: 400px;
+            height: 400px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        /* Enhanced Content Cards */
+        .content-section {
+            max-width: 1000px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .content-card {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(194, 24, 91, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: 30px 30px 0 0;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+        }
+        
+        .content-card h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid transparent;
+            background: linear-gradient(90deg, var(--primary), var(--secondary)) left bottom no-repeat;
+            background-size: 120px 3px;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .content-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin: 30px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .content-card h3::before {
+            content: '◆';
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        
+        .content-card p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            color: #475569;
+        }
+        
+        .content-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .content-card ul li {
+            padding: 18px 0 18px 40px;
+            position: relative;
+            font-size: 1.05rem;
+            color: #475569;
+            border-bottom: 1px solid #f1f5f9;
+            transition: all 0.3s ease;
+        }
+        
+        .content-card ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .content-card ul li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            top: 18px;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .content-card ul li:hover {
+            padding-right: 10px;
+            background: rgba(194, 24, 91, 0.02);
+        }
+        
+        /* Stats Grid Enhancement */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 25px 60px rgba(194, 24, 91, 0.2);
+            border-color: var(--primary);
+        }
+        
+        .stat-card:hover::before {
+            opacity: 0.05;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-label {
+            font-size: 1.15rem;
+            color: var(--dark);
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Section Title Enhancement */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--secondary);
+            margin: 60px 0 40px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 25px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: 10px;
+        }
+        
+        /* Highlight Boxes Enhancement */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(194, 24, 91, 0.08), rgba(123, 31, 162, 0.08));
+            border-right: 5px solid var(--primary);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .highlight-box::before {
+            content: '💡';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 3rem;
+            opacity: 0.1;
+        }
+        
+        .highlight-box strong {
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Warning Box Enhancement */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.12), rgba(255, 152, 0, 0.12));
+            border-right: 5px solid #ff9800;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .warning-box::before {
+            content: '⚠️';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 3rem;
+            opacity: 0.15;
+        }
+        
+        .warning-box strong {
+            color: #f57c00;
+            font-size: 1.15rem;
+        }
+        
+        /* Contact Form Enhancement */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 18px;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(194, 24, 91, 0.1);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 18px;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(194, 24, 91, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(194, 24, 91, 0.4);
+        }
+        
+        /* Contact Info Items */
+        .contact-item {
+            background: linear-gradient(135deg, #f8fafc, #ffffff);
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateX(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(194, 24, 91, 0.1);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            box-shadow: 0 8px 20px rgba(194, 24, 91, 0.3);
+        }
+        
+        /* FAQ Enhancement */
+        .faq-section {
+            margin-top: 80px;
+        }
+        
+        .faq-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--secondary);
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 25px;
+        }
+        
+        .faq-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: 10px;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .faq-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 15px 40px rgba(194, 24, 91, 0.1);
+        }
+        
+        .faq-item:hover::before {
+            transform: scaleY(1);
+        }
+        
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .faq-answer {
+            font-size: 1.08rem;
+            color: #475569;
+            line-height: 1.8;
+        }
+        
+        /* Social Links Enhancement */
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .social-link {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            box-shadow: 0 8px 20px rgba(194, 24, 91, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: scale(1.15) rotate(5deg);
+            box-shadow: 0 12px 30px rgba(194, 24, 91, 0.4);
+        }
+        
+        /* Responsive Enhancements */
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content-card {
+                padding: 35px 25px;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-card h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">كويزات<span class="highlight">عربية</span></a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="#men" class="nav-link">للرجال</a>
+                <a href="#women" class="nav-link">للنساء</a>
+                <a href="#entertainment" class="nav-link">ترفيه</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن اختبار...">
+                    <button class="search-btn" style="background:none;border:none;cursor:pointer;">🔍</button>
+                </div>
+                <a href="#men" class="cta-btn">ابدأ الآن</a>
+            </div>
+
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>سياسة الخصوصية</h1>
+        <p>نحن ملتزمون بحماية خصوصيتك وبياناتك الشخصية</p>
+        <p style="font-size: 0.95rem; margin-top: 10px;">آخر تحديث: 17 يناير 2026</p>
+    </section>
+
+    <div class="content-section">
+        <div class="content-card">
+            <h2>مقدمة</h2>
+            <p>
+                مرحباً بك في <strong>كويزات عربية</strong>. نحن نقدر ثقتك بنا ونلتزم بحماية خصوصيتك وبياناتك الشخصية.
+                توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية ومشاركة المعلومات التي نحصل عليها منك عند استخدامك
+                لموقعنا الإلكتروني وخدماتنا.
+            </p>
+            <p>
+                باستخدامك لموقع <strong>كويزات عربية</strong>، فإنك توافق على جمع واستخدام المعلومات وفقاً لهذه السياسة.
+                إذا كنت لا توافق على أي جزء من هذه السياسة، يرجى عدم استخدام خدماتنا.
+            </p>
+            <div class="highlight-box">
+                <strong>التزامنا الأساسي:</strong> نحن لا نبيع أو نؤجر أو نشارك معلوماتك الشخصية مع أطراف ثالثة لأغراض
+                تسويقية دون موافقتك الصريحة.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>1. المعلومات التي نجمعها</h2>
+
+            <h3>1.1 المعلومات التي تقدمها طوعاً</h3>
+            <p>عند استخدامك لموقعنا، قد نجمع المعلومات التالية:</p>
+            <ul>
+                <li><strong>معلومات الاتصال:</strong> مثل الاسم والبريد الإلكتروني عند التواصل معنا أو الاشتراك في
+                    نشرتنا البريدية</li>
+                <li><strong>إجابات الاختبارات:</strong> الإجابات التي تقدمها في الاختبارات المختلفة على المنصة</li>
+                <li><strong>التعليقات والملاحظات:</strong> أي تعليقات أو اقتراحات ترسلها إلينا</li>
+            </ul>
+
+            <h3>1.2 المعلومات التي نجمعها تلقائياً</h3>
+            <p>عند زيارتك لموقعنا، نجمع تلقائياً بعض المعلومات التقنية:</p>
+            <ul>
+                <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، المتصفح المستخدم</li>
+                <li><strong>معلومات الاستخدام:</strong> الصفحات التي تزورها، الوقت المستغرق، الاختبارات التي تكملها</li>
+                <li><strong>عنوان IP:</strong> عنوان بروتوكول الإنترنت الخاص بك (مجهول الهوية)</li>
+                <li><strong>ملفات تعريف الارتباط (Cookies):</strong> لتحسين تجربتك وتذكر تفضيلاتك</li>
+            </ul>
+
+            <h3>1.3 المعلومات من مصادر خارجية</h3>
+            <p>قد نتلقى معلومات عنك من مصادر خارجية مثل:</p>
+            <ul>
+                <li>منصات التواصل الاجتماعي (إذا اخترت تسجيل الدخول عبرها)</li>
+                <li>شركاء الإعلانات (Google AdSense) لعرض إعلانات ذات صلة</li>
+                <li>أدوات التحليل (Google Analytics) لفهم سلوك المستخدمين</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>2. كيف نستخدم معلوماتك</h2>
+            <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
+
+            <h3>2.1 تقديم وتحسين خدماتنا</h3>
+            <ul>
+                <li>تقديم نتائج الاختبارات الشخصية المخصصة لك</li>
+                <li>تحسين محتوى الاختبارات وتجربة المستخدم</li>
+                <li>تطوير اختبارات جديدة بناءً على اهتمامات المستخدمين</li>
+                <li>إصلاح الأخطاء التقنية وتحسين أداء الموقع</li>
+            </ul>
+
+            <h3>2.2 التواصل معك</h3>
+            <ul>
+                <li>الرد على استفساراتك وطلبات الدعم</li>
+                <li>إرسال تحديثات حول اختبارات جديدة (إذا اشتركت في النشرة البريدية)</li>
+                <li>إشعارك بتغييرات مهمة في سياسة الخصوصية أو شروط الاستخدام</li>
+            </ul>
+
+            <h3>2.3 التحليل والإحصاءات</h3>
+            <ul>
+                <li>فهم كيفية استخدام الزوار للموقع</li>
+                <li>تحليل الاتجاهات والأنماط في إجابات الاختبارات (بشكل مجهول)</li>
+                <li>قياس فعالية حملاتنا التسويقية</li>
+            </ul>
+
+            <h3>2.4 الأمان والامتثال القانوني</h3>
+            <ul>
+                <li>حماية الموقع من الاحتيال والأنشطة الضارة</li>
+                <li>الامتثال للقوانين واللوائح المعمول بها</li>
+                <li>حماية حقوقنا وحقوق مستخدمينا</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>3. مشاركة المعلومات</h2>
+            <p>نحن نحترم خصوصيتك ولا نشارك معلوماتك الشخصية إلا في الحالات التالية:</p>
+
+            <h3>3.1 مقدمو الخدمات</h3>
+            <p>
+                قد نشارك معلوماتك مع مقدمي خدمات موثوقين يساعدوننا في تشغيل الموقع، مثل:
+            </p>
+            <ul>
+                <li>خدمات الاستضافة السحابية</li>
+                <li>أدوات التحليل (Google Analytics)</li>
+                <li>منصات الإعلانات (Google AdSense)</li>
+                <li>خدمات البريد الإلكتروني</li>
+            </ul>
+            <p>
+                جميع هؤلاء المقدمين ملزمون تعاقدياً بحماية معلوماتك واستخدامها فقط للأغراض المحددة.
+            </p>
+
+            <h3>3.2 الامتثال القانوني</h3>
+            <p>قد نكشف عن معلوماتك إذا كان ذلك مطلوباً قانونياً:</p>
+            <ul>
+                <li>الامتثال لأمر قضائي أو إجراء قانوني</li>
+                <li>حماية حقوقنا أو ممتلكاتنا أو سلامتنا</li>
+                <li>منع الاحتيال أو الأنشطة غير القانونية</li>
+            </ul>
+
+            <h3>3.3 موافقتك</h3>
+            <p>
+                قد نشارك معلوماتك مع أطراف ثالثة أخرى بموافقتك الصريحة.
+            </p>
+
+            <div class="highlight-box">
+                <strong>ملاحظة مهمة:</strong> نحن لا نبيع معلوماتك الشخصية لأي طرف ثالث تحت أي ظرف من الظروف.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>4. ملفات تعريف الارتباط (Cookies)</h2>
+            <p>
+                نستخدم ملفات تعريف الارتباط وتقنيات مشابهة لتحسين تجربتك على موقعنا:
+            </p>
+
+            <h3>4.1 أنواع ملفات تعريف الارتباط</h3>
+            <ul>
+                <li><strong>ملفات تعريف الارتباط الضرورية:</strong> مطلوبة لتشغيل الموقع بشكل صحيح</li>
+                <li><strong>ملفات تعريف الارتباط الوظيفية:</strong> لتذكر تفضيلاتك وإعداداتك</li>
+                <li><strong>ملفات تعريف الارتباط التحليلية:</strong> لفهم كيفية استخدامك للموقع</li>
+                <li><strong>ملفات تعريف الارتباط الإعلانية:</strong> لعرض إعلانات ذات صلة باهتماماتك</li>
+            </ul>
+
+            <h3>4.2 إدارة ملفات تعريف الارتباط</h3>
+            <p>
+                يمكنك التحكم في ملفات تعريف الارتباط من خلال إعدادات متصفحك. ومع ذلك، قد يؤثر تعطيل بعض ملفات تعريف
+                الارتباط على وظائف الموقع.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h2>5. أمان البيانات</h2>
+            <p>
+                نحن نأخذ أمان بياناتك على محمل الجد ونطبق تدابير أمنية متعددة:
+            </p>
+            <ul>
+                <li><strong>التشفير:</strong> نستخدم بروتوكول HTTPS لتشفير البيانات المنقولة</li>
+                <li><strong>التخزين الآمن:</strong> نخزن البيانات على خوادم آمنة محمية بجدران نارية</li>
+                <li><strong>الوصول المحدود:</strong> فقط الموظفون المصرح لهم يمكنهم الوصول إلى البيانات الشخصية</li>
+                <li><strong>المراقبة المستمرة:</strong> نراقب أنظمتنا بانتظام للكشف عن أي نشاط مشبوه</li>
+                <li><strong>التحديثات الأمنية:</strong> نحدث أنظمتنا بانتظام لحمايتها من التهديدات الجديدة</li>
+            </ul>
+            <p>
+                ومع ذلك، لا يمكن لأي نظام أن يكون آمناً بنسبة 100%. نحن نبذل قصارى جهدنا لحماية معلوماتك، لكننا لا
+                نستطيع ضمان الأمان المطلق.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h2>6. حقوقك</h2>
+            <p>لديك الحقوق التالية فيما يتعلق ببياناتك الشخصية:</p>
+
+            <h3>6.1 الحق في الوصول</h3>
+            <p>يمكنك طلب نسخة من البيانات الشخصية التي نحتفظ بها عنك.</p>
+
+            <h3>6.2 الحق في التصحيح</h3>
+            <p>يمكنك طلب تصحيح أي معلومات غير دقيقة أو غير كاملة.</p>
+
+            <h3>6.3 الحق في الحذف</h3>
+            <p>يمكنك طلب حذف بياناتك الشخصية في ظروف معينة.</p>
+
+            <h3>6.4 الحق في الاعتراض</h3>
+            <p>يمكنك الاعتراض على معالجة بياناتك الشخصية لأغراض معينة.</p>
+
+            <h3>6.5 الحق في نقل البيانات</h3>
+            <p>يمكنك طلب نقل بياناتك إلى خدمة أخرى بتنسيق قابل للقراءة آلياً.</p>
+
+            <h3>6.6 الحق في سحب الموافقة</h3>
+            <p>يمكنك سحب موافقتك على معالجة بياناتك في أي وقت.</p>
+
+            <div class="highlight-box">
+                <strong>لممارسة أي من هذه الحقوق،</strong> يرجى التواصل معنا عبر صفحة <a href="contact.html"
+                    style="color: var(--primary); font-weight: bold;">تواصل معنا</a>.
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>7. الاحتفاظ بالبيانات</h2>
+            <p>
+                نحتفظ ببياناتك الشخصية فقط طالما كان ذلك ضرورياً للأغراض المحددة في هذه السياسة:
+            </p>
+            <ul>
+                <li><strong>إجابات الاختبارات:</strong> نحتفظ بها بشكل مجهول للتحليل الإحصائي</li>
+                <li><strong>معلومات الاتصال:</strong> نحتفظ بها حتى تطلب حذفها أو تلغي اشتراكك</li>
+                <li><strong>البيانات التقنية:</strong> عادة ما يتم حذفها تلقائياً بعد 24-36 شهراً</li>
+            </ul>
+            <p>
+                بعد انتهاء فترة الاحتفاظ، نحذف أو نجعل بياناتك مجهولة الهوية بشكل آمن.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h2>8. خصوصية الأطفال</h2>
+            <p>
+                موقعنا غير موجه للأطفال دون سن 13 عاماً. نحن لا نجمع عن قصد معلومات شخصية من الأطفال دون هذا السن.
+            </p>
+            <p>
+                إذا علمنا أننا جمعنا معلومات شخصية من طفل دون سن 13 عاماً دون موافقة الوالدين، سنتخذ خطوات لحذف هذه
+                المعلومات في أقرب وقت ممكن.
+            </p>
+            <p>
+                إذا كنت والداً أو وصياً وتعتقد أن طفلك قدم معلومات شخصية لنا، يرجى الاتصال بنا فوراً.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h2>9. الروابط الخارجية</h2>
+            <p>
+                قد يحتوي موقعنا على روابط لمواقع خارجية. نحن لسنا مسؤولين عن ممارسات الخصوصية أو محتوى هذه المواقع.
+            </p>
+            <p>
+                ننصحك بمراجعة سياسات الخصوصية لأي موقع خارجي تزوره من خلال روابطنا.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h2>10. التغييرات على سياسة الخصوصية</h2>
+            <p>
+                قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس التغييرات في ممارساتنا أو للأسباب التشغيلية أو
+                القانونية أو التنظيمية.
+            </p>
+            <p>
+                سننشر أي تغييرات على هذه الصفحة ونحدث تاريخ "آخر تحديث" في الأعلى. إذا كانت التغييرات جوهرية، سنبذل
+                جهوداً معقولة لإعلامك (مثل إرسال إشعار بالبريد الإلكتروني أو عرض إشعار بارز على موقعنا).
+            </p>
+            <p>
+                استمرارك في استخدام خدماتنا بعد نشر التغييرات يعني قبولك لسياسة الخصوصية المحدثة.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h2>11. الاتصال بنا</h2>
+            <p>
+                إذا كان لديك أي أسئلة أو مخاوف بشأن سياسة الخصوصية هذه أو ممارساتنا المتعلقة بالبيانات، يرجى الاتصال
+                بنا:
+            </p>
+            <ul>
+                <li><strong>عبر صفحة الاتصال:</strong> <a href="contact.html"
+                        style="color: var(--primary); font-weight: bold;">تواصل معنا</a></li>
+                <li><strong>البريد الإلكتروني:</strong> privacy@arabquizzes.com</li>
+            </ul>
+            <p>
+                سنبذل قصارى جهدنا للرد على استفساراتك في غضون 48 ساعة.
+            </p>
+        </div>
+
+        <div class="content-card" style="background: var(--gradient); color: white; text-align: center;">
+            <h2 style="color: white; border: none;">نحن نقدر ثقتك</h2>
+            <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem;">
+                خصوصيتك وأمان بياناتك هما أولويتنا القصوى. نحن ملتزمون بحماية معلوماتك وتوفير تجربة آمنة وممتعة لك.
+            </p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color:white;margin-bottom:15px;">كويزات<span class="highlight">عربية</span>
+                </div>
+                <p style="color:#cbd5e1;line-height:1.6;">منصة ترفيهية تعليمية تساعدك على اكتشاف نفسك وفهم علاقاتك بشكل
+                    أفضل من خلال اختبارات ممتعة ودقيقة.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>اكتشف</h3>
+                <ul class="footer-links">
+                    <li><a href="#men">الأكثر رواجاً</a></li>
+                    <li><a href="#men">جديدنا</a></li>
+                    <li><a href="#men">اختبارات الحب</a></li>
+                    <li><a href="#men">تحليل الشخصية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>معلومات</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="terms.html">شروط الاستخدام</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+                <p class="disclaimer">لأغراض الترفيه واكتشاف الذات فقط</p>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-btn');
+            const menu = document.querySelector('.nav-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                    btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1454 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="تعرف على كويزات عربية - منصتك الترفيهية التعليمية لاكتشاف الذات وفهم العلاقات من خلال اختبارات شخصية ممتعة ودقيقة.">
+    <meta name="keywords" content="كويزات عربية, من نحن, اختبارات شخصية, ترفيه تعليمي">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="من نحن - كويزات عربية">
+    <meta property="og:description"
+        content="تعرف على كويزات عربية - منصتك الترفيهية التعليمية لاكتشاف الذات وفهم العلاقات.">
+    <meta property="og:image" content="https://darlma3rifa.com/assets/logo.png">
+    <meta property="og:url" content="https://darlma3rifa.com/about.html">
+
+    <title>من نحن - كويزات عربية</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+        :root {
+            --primary: #c2185b;
+            --secondary: #7b1fa2;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --surface: #ffffff;
+            --accent: #ffd700;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            direction: rtl;
+        }
+
+        /* NEW HEADER STYLES */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo .highlight {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: #f1f5f9;
+            border-radius: 30px;
+            padding: 5px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .search-box:focus-within {
+            border-color: var(--primary);
+            background: white;
+        }
+
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 5px;
+            font-family: inherit;
+            width: 150px;
+            font-size: 0.9rem;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            box-shadow: 0 4px 15px rgba(194, 24, 91, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* FOOTER STYLES */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 80px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-right: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+
+            .nav-menu,
+            .search-box {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* CATEGORY SECTIONS */
+        .category-section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e2e8f0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .badge {
+            background: var(--accent);
+            color: var(--dark);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        /* GRID */
+        .quiz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* CARDS */
+        .quiz-card {
+            background: var(--surface);
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+            border: 2px solid transparent;
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .card-thumb {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background: #f1f5f9;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .card-meta {
+            font-size: 0.9rem;
+            color: #64748b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .play-btn {
+            background: #f1f5f9;
+            color: var(--primary);
+            padding: 8px 15px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .quiz-card:hover .play-btn {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* PLACEHOLDER MSG */
+        .empty-msg {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            border-radius: 20px;
+            color: #94a3b8;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        /* HERO SECTION - ELEGANT DARK STYLE */
+        .hero {
+            background: #1a1a2e;
+            /* Deep indigo/dark background */
+            position: relative;
+            padding: 100px 20px;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 0 0 50px 50px;
+            /* Curve at bottom only */
+            margin: 0 0 60px 0;
+            /* Remove side margins, stick to top nav sort of, or just margin bottom */
+            color: white;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Abstract decorative blobs */
+        .hero::before,
+        .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.6;
+            animation: float 10s ease-in-out infinite;
+        }
+
+        .hero::before {
+            background: var(--primary);
+            width: 400px;
+            aspect-ratio: 16 / 9; height: auto;
+            top: -100px;
+            right: -100px;
+        }
+
+        .hero::after {
+            background: var(--secondary);
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            left: -50px;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(30px, 50px);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            background: linear-gradient(to right, #fff, #e2e8f0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 45px;
+            color: #cbd5e1;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-btn {
+            background: white;
+            color: var(--primary);
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+            border: 2px solid transparent;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+            background: transparent;
+            border-color: white;
+            color: white;
+        }
+
+        .hero-stats {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-num {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* FEATURES SECTION - ELEGANT ANIMATED */
+        .features {
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out backwards;
+        }
+
+        /* Staggered animation delays */
+        .feature-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .feature-card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .feature-card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(123, 31, 162, 0.1);
+            border-color: rgba(123, 31, 162, 0.1);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.4s;
+            transform-origin: left;
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.4s;
+            font-size: 2.5rem;
+        }
+
+        .feature-card:hover .feature-icon-wrapper {
+            transform: rotateY(180deg);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+
+        .feature-card:hover .feature-icon {
+            color: white;
+            /* When wrapper becomes colored */
+        }
+
+        .feature-icon {
+            display: block;
+            /* Initial color handled by emoji or text color? */
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+
+        .feature-card:hover .feature-title {
+            color: var(--primary);
+        }
+
+        .feature-desc {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                padding: 60px 20px;
+                border-radius: 0 0 30px 30px;
+            }
+
+            .hero-stats {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .quiz-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* MOBILE MENU FIX */
+        @media (max-width: 900px) {
+            .nav-menu.active {
+                display: flex !important;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(10px);
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 30px 30px;
+                z-index: 1001;
+                animation: slideDown 0.3s ease;
+            }
+
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: var(--dark);
+            }
+        }
+
+
+        .view-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            color: white;
+            font-size: 0.85em;
+            margin-left: 5px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* ENHANCED DECORATIVE STYLES FOR LEGAL PAGES */
+        
+        /* Page background with subtle pattern */
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(194, 24, 91, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(123, 31, 162, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Enhanced Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            position: relative;
+            padding: 80px 20px;
+            margin-bottom: 60px;
+        }
+        
+        .hero::before {
+            background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+            width: 500px;
+            height: 500px;
+        }
+        
+        .hero::after {
+            background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+            width: 400px;
+            height: 400px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        /* Enhanced Content Cards */
+        .content-section {
+            max-width: 1000px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .content-card {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(194, 24, 91, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: 30px 30px 0 0;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+        }
+        
+        .content-card h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid transparent;
+            background: linear-gradient(90deg, var(--primary), var(--secondary)) left bottom no-repeat;
+            background-size: 120px 3px;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .content-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin: 30px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .content-card h3::before {
+            content: '◆';
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        
+        .content-card p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            color: #475569;
+        }
+        
+        .content-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .content-card ul li {
+            padding: 18px 0 18px 40px;
+            position: relative;
+            font-size: 1.05rem;
+            color: #475569;
+            border-bottom: 1px solid #f1f5f9;
+            transition: all 0.3s ease;
+        }
+        
+        .content-card ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .content-card ul li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            top: 18px;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .content-card ul li:hover {
+            padding-right: 10px;
+            background: rgba(194, 24, 91, 0.02);
+        }
+        
+        /* Stats Grid Enhancement */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 25px 60px rgba(194, 24, 91, 0.2);
+            border-color: var(--primary);
+        }
+        
+        .stat-card:hover::before {
+            opacity: 0.05;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-label {
+            font-size: 1.15rem;
+            color: var(--dark);
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Section Title Enhancement */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--secondary);
+            margin: 60px 0 40px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 25px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: 10px;
+        }
+        
+        /* Highlight Boxes Enhancement */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(194, 24, 91, 0.08), rgba(123, 31, 162, 0.08));
+            border-right: 5px solid var(--primary);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .highlight-box::before {
+            content: '💡';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 3rem;
+            opacity: 0.1;
+        }
+        
+        .highlight-box strong {
+            color: var(--primary);
+            font-size: 1.15rem;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Warning Box Enhancement */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.12), rgba(255, 152, 0, 0.12));
+            border-right: 5px solid #ff9800;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .warning-box::before {
+            content: '⚠️';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 3rem;
+            opacity: 0.15;
+        }
+        
+        .warning-box strong {
+            color: #f57c00;
+            font-size: 1.15rem;
+        }
+        
+        /* Contact Form Enhancement */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 18px;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(194, 24, 91, 0.1);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 18px;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(194, 24, 91, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(194, 24, 91, 0.4);
+        }
+        
+        /* Contact Info Items */
+        .contact-item {
+            background: linear-gradient(135deg, #f8fafc, #ffffff);
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateX(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(194, 24, 91, 0.1);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            box-shadow: 0 8px 20px rgba(194, 24, 91, 0.3);
+        }
+        
+        /* FAQ Enhancement */
+        .faq-section {
+            margin-top: 80px;
+        }
+        
+        .faq-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--secondary);
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 25px;
+        }
+        
+        .faq-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            border-radius: 10px;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .faq-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 15px 40px rgba(194, 24, 91, 0.1);
+        }
+        
+        .faq-item:hover::before {
+            transform: scaleY(1);
+        }
+        
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .faq-answer {
+            font-size: 1.08rem;
+            color: #475569;
+            line-height: 1.8;
+        }
+        
+        /* Social Links Enhancement */
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .social-link {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            box-shadow: 0 8px 20px rgba(194, 24, 91, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: scale(1.15) rotate(5deg);
+            box-shadow: 0 12px 30px rgba(194, 24, 91, 0.4);
+        }
+        
+        /* Responsive Enhancements */
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content-card {
+                padding: 35px 25px;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-card h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">كويزات<span class="highlight">عربية</span></a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="#men" class="nav-link">للرجال</a>
+                <a href="#women" class="nav-link">للنساء</a>
+                <a href="#entertainment" class="nav-link">ترفيه</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن اختبار...">
+                    <button class="search-btn" style="background:none;border:none;cursor:pointer;">🔍</button>
+                </div>
+                <a href="#men" class="cta-btn">ابدأ الآن</a>
+            </div>
+
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>من نحن</h1>
+        <p>منصة ترفيهية تعليمية رائدة تساعدك على اكتشاف نفسك وفهم علاقاتك بشكل أفضل</p>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <div class="content-section">
+        <div class="content-card">
+            <h2>رؤيتنا ورسالتنا</h2>
+            <p>
+                في عالم يسوده التسارع والضجيج، نؤمن في <strong>كويزات عربية</strong> بأن معرفة الذات هي البوابة الحقيقية
+                للسعادة والنجاح. نحن لسنا مجرد منصة اختبارات عابرة، بل نحن رفيقك في رحلة اكتشاف أعماقك، فهم شخصيتك،
+                وتحسين علاقاتك مع من حولك.
+            </p>
+            <p>
+                تأسست منصتنا على يد فريق من المتخصصين في علم النفس، التنمية البشرية، والتكنولوجيا، بهدف واحد: تقديم
+                تجربة تفاعلية ممتعة تجمع بين الترفيه والفائدة العلمية. نحن نؤمن بأن الاختبارات الشخصية ليست مجرد وسيلة
+                للتسلية، بل هي أداة قوية للتأمل الذاتي والنمو الشخصي.
+            </p>
+            <p>
+                رسالتنا واضحة: نسعى لتمكين كل فرد في العالم العربي من فهم نفسه بشكل أعمق، اكتشاف نقاط قوته وضعفه، وبناء
+                علاقات أكثر صحة ونضجاً مع الآخرين. نحن نؤمن بأن الوعي الذاتي هو الخطوة الأولى نحو حياة أكثر توازناً
+                وسعادة.
+            </p>
+        </div>
+
+        <div class="content-card">
+            <h2>ما الذي يميزنا؟</h2>
+            <ul>
+                <li><strong>محتوى علمي دقيق:</strong> جميع اختباراتنا مبنية على أسس علمية من علم النفس الحديث، ومصممة
+                    بعناية فائقة لتقديم نتائج دقيقة وموثوقة.</li>
+                <li><strong>تجربة تفاعلية ممتعة:</strong> نجمع بين الترفيه والفائدة من خلال تصميم جذاب، أسئلة مشوقة،
+                    ونتائج مفصلة تساعدك على فهم نفسك بشكل أعمق.</li>
+                <li><strong>تنوع شامل:</strong> نقدم مئات الاختبارات في مختلف المجالات: الشخصية، العلاقات، الحب، الزواج،
+                    المهنة، والذكاء العاطفي.</li>
+                <li><strong>خصوصية تامة:</strong> نحترم خصوصيتك بشكل كامل. جميع إجاباتك ونتائجك محمية ولا نشاركها مع أي
+                    طرف ثالث.</li>
+                <li><strong>مجاني بالكامل:</strong> نؤمن بأن المعرفة حق للجميع، لذلك جميع اختباراتنا متاحة مجاناً دون أي
+                    رسوم أو اشتراكات.</li>
+                <li><strong>محتوى عربي أصيل:</strong> جميع اختباراتنا مصممة خصيصاً للثقافة العربية، مع مراعاة القيم
+                    والعادات والتقاليد الخاصة بمجتمعاتنا.</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>كيف نعمل؟</h2>
+            <p>
+                نحن نؤمن بالجودة قبل الكمية. كل اختبار على منصتنا يمر بعملية تطوير دقيقة تشمل:
+            </p>
+            <ul>
+                <li><strong>البحث العلمي:</strong> نبدأ بدراسة معمقة للموضوع من خلال المراجع العلمية والدراسات النفسية
+                    الحديثة.</li>
+                <li><strong>التصميم الإبداعي:</strong> نصمم الأسئلة بطريقة مشوقة وسهلة الفهم، مع الحرص على الدقة
+                    العلمية.</li>
+                <li><strong>التحليل الدقيق:</strong> نستخدم خوارزميات متقدمة لتحليل إجاباتك وتقديم نتائج شخصية مفصلة.
+                </li>
+                <li><strong>التحديث المستمر:</strong> نقوم بتحديث اختباراتنا بشكل دوري بناءً على آخر الأبحاث العلمية
+                    وملاحظات مستخدمينا.</li>
+            </ul>
+        </div>
+
+        <!-- STATS SECTION -->
+        <h2 class="section-title">إنجازاتنا بالأرقام</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">اختبار متنوع</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500K+</div>
+                <div class="stat-label">مستخدم نشط</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2M+</div>
+                <div class="stat-label">اختبار مكتمل</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">رضا المستخدمين</div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>التزامنا تجاهك</h2>
+            <p>
+                نحن ملتزمون بتقديم أفضل تجربة ممكنة لكل مستخدم. هذا يعني:
+            </p>
+            <ul>
+                <li><strong>الجودة أولاً:</strong> لن نضحي بالجودة من أجل الكمية. كل اختبار يجب أن يكون مفيداً وممتعاً.
+                </li>
+                <li><strong>الاستماع لك:</strong> نحن نقرأ كل تعليقاتكم واقتراحاتكم، ونعمل على تطوير المنصة بناءً على
+                    احتياجاتكم.</li>
+                <li><strong>الشفافية:</strong> نحن واضحون بشأن كيفية عمل اختباراتنا وكيفية استخدام بياناتكم.</li>
+                <li><strong>التطوير المستمر:</strong> نعمل باستمرار على إضافة اختبارات جديدة وتحسين الموجودة.</li>
+            </ul>
+        </div>
+
+        <div class="content-card">
+            <h2>انضم إلى مجتمعنا</h2>
+            <p>
+                <strong>كويزات عربية</strong> ليست مجرد منصة، بل هي مجتمع متنامٍ من الأفراد الذين يسعون لفهم أنفسهم بشكل
+                أفضل. نحن نشجعك على:
+            </p>
+            <ul>
+                <li>مشاركة نتائجك مع أصدقائك وعائلتك لفتح حوارات ممتعة ومفيدة</li>
+                <li>تجربة اختبارات متنوعة لاكتشاف جوانب جديدة من شخصيتك</li>
+                <li>مراسلتنا بأفكارك واقتراحاتك لاختبارات جديدة</li>
+                <li>متابعتنا على وسائل التواصل الاجتماعي للحصول على نصائح يومية ومحتوى حصري</li>
+            </ul>
+            <p>
+                نحن هنا لنكون رفيقك في رحلة اكتشاف الذات. معاً، نستطيع بناء مجتمع أكثر وعياً، نضجاً، وسعادة.
+            </p>
+        </div>
+
+        <div class="content-card" style="text-align: center; background: var(--gradient); color: white;">
+            <h2 style="color: white;">هل أنت مستعد لاكتشاف نفسك؟</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 30px;">
+                ابدأ رحلتك الآن مع مئات الاختبارات الممتعة والمفيدة
+            </p>
+            <a href="index.html" class="cta-btn"
+                style="background: white; color: var(--primary); display: inline-block; font-size: 1.2rem; padding: 15px 40px;">
+                استكشف الاختبارات
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color:white;margin-bottom:15px;">كويزات<span class="highlight">عربية</span>
+                </div>
+                <p style="color:#cbd5e1;line-height:1.6;">منصة ترفيهية تعليمية تساعدك على اكتشاف نفسك وفهم علاقاتك بشكل
+                    أفضل من خلال اختبارات ممتعة ودقيقة.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>اكتشف</h3>
+                <ul class="footer-links">
+                    <li><a href="#men">الأكثر رواجاً</a></li>
+                    <li><a href="#men">جديدنا</a></li>
+                    <li><a href="#men">اختبارات الحب</a></li>
+                    <li><a href="#men">تحليل الشخصية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>معلومات</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="terms.html">شروط الاستخدام</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+                <p class="disclaimer">لأغراض الترفيه واكتشاف الذات فقط</p>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-btn');
+            const menu = document.querySelector('.nav-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                    btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

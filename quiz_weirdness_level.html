@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & Social Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://darlma3rifa.com/quiz_weirdness_level.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ما هو مستوى الغرابة لديك؟">
+    <meta property="og:description" content="اختبر نفسك الآن: ما هو مستوى الغرابة لديك؟. اكتشف أسرار شخصيتك الحقيقية من خلال هذا الاختبار الترفيهي والدقيق.">
+    <meta property="og:image" content="https://darlma3rifa.com/THUMBNAILS/ENTERTAINMENT/quiz_weirdness_level.jpeg">
+    <meta property="og:url" content="https://darlma3rifa.com/quiz_weirdness_level.html">
+    <meta property="og:site_name" content="كويزات عربية">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ما هو مستوى الغرابة لديك؟">
+    <meta name="twitter:description" content="اختبر نفسك الآن: ما هو مستوى الغرابة لديك؟. اكتشف أسرار شخصيتك الحقيقية من خلال هذا الاختبار الترفيهي والدقيق.">
+    <meta name="twitter:image" content="https://darlma3rifa.com/THUMBNAILS/ENTERTAINMENT/quiz_weirdness_level.jpeg">
+
+    <meta name="description" content="اختبر نفسك الآن: ما هو مستوى الغرابة لديك؟. اكتشف أسرار شخصيتك الحقيقية من خلال هذا الاختبار الترفيهي والدقيق.">
+    <title>ما هو مستوى الغرابة لديك؟ | كويزات عربية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+        :root {
+            --primary-color: #263238;
+            /* Dark Grey/Mysterious */
+            --secondary-color: #37474f;
+            --accent-color: #78909c;
+            --bg-color: #eceff1;
+            --card-bg: #ffffff;
+            --text-main: #212121;
+            --font-stack: 'Cairo', system-ui, -apple-system, sans-serif;
+            --shadow-soft: 0 8px 30px rgba(38, 50, 56, 0.08);
+            /* ORIGINAL */
+        }
+
+        /* HEADER/FOOTER VARIABLES & STYLES */
+        :root {
+            --primary: #c2185b;
+            --secondary: #7b1fa2;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --surface: #ffffff;
+            --accent: #ffd700;
+        }
+
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo .highlight {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            box-shadow: 0 4px 15px rgba(194, 24, 91, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 80px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-col h3 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-right: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
+        /* RELATED QUIZZES */
+        .related-section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .related-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .related-card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+            display: block;
+            text-align: center;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .related-img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            background: #ddd;
+        }
+
+        .related-card h4 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-stack);
+            background: var(--bg-color);
+            color: var(--text-main);
+            direction: rtl;
+            text-align: right;
+        }
+
+        #quiz-app-container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .seo-intro {
+            background: #cfd8dc;
+            padding: 30px;
+            border-radius: 20px;
+            border-right: 5px solid var(--primary-color);
+            margin-bottom: 40px;
+            line-height: 1.7;
+            color: #263238;
+        }
+
+        .question-item {
+            margin-bottom: 60px;
+            border-bottom: 2px solid #b0bec5;
+            padding-bottom: 30px;
+        }
+
+        .question-item:last-child {
+            border: none;
+        }
+
+        .question-text {
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .answer-btn {
+            background: #fff;
+            border: 2px solid #b0bec5;
+            padding: 18px;
+            border-radius: 15px;
+            width: 100%;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1.05rem;
+            transition: 0.2s;
+            text-align: right;
+            display: block;
+        }
+
+        .answer-btn:hover,
+        .answer-btn.selected {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .submit-btn {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 20px 60px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.5;
+        }
+
+        #result-section {
+            display: none;
+            text-align: center;
+        }
+
+        .result-title {
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .result-body {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #37474f;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 15px;
+            max-width: 350px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .ad-separator {
+            margin: 50px 0;
+            text-align: center;
+            min-height: 250px;
+            background: #f5f5f5;
+            padding: 10px;
+        }
+    
+        .quiz-hero-img {
+            width: 100%;
+            height: auto; /* Allow full height based on aspect ratio */
+            border-radius: var(--radius-md);
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+    
+        /* MOBILE MENU FIX */
+        @media (max-width: 900px) {
+            .nav-menu.active {
+                display: flex !important;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(10px);
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                border-radius: 0 0 30px 30px;
+                z-index: 1001;
+                animation: slideDown 0.3s ease;
+            }
+            @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+            
+            .mobile-menu-btn {
+                display: block;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: var(--dark);
+            }
+        }
+
+    
+        /* SHARE BUTTONS */
+        .share-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .share-btn { padding: 12px; border:none; border-radius:15px; color:white; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; transition:transform 0.2s; font-family: inherit; font-size: 0.9rem; text-decoration:none; }
+        .share-btn:hover { transform:translateY(-2px); opacity: 0.95; }
+        .whatsapp { background: #25D366; }
+        .facebook { background: #1877F2; }
+        .twitter { background: #000000; }
+        .copy { background: #607D8B; }
+
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">كويزات<span class="highlight">عربية</span></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="index.html#men" class="nav-link">للرجال</a>
+                <a href="index.html#women" class="nav-link">للنساء</a>
+            </nav>
+            <a href="index.html" class="cta-btn">المزيد</a>
+        </div>
+    </header>
+
+    <div id="quiz-app-container">
+        <div id="quiz-form">
+            <img src="THUMBNAILS/ENTERTAINMENT/quiz_weirdness_level.jpeg" class="quiz-hero-img" alt="quiz_weirdness_level">
+            <div class="seo-intro"><h1>ما هو مستوى الغرابة لديك؟ اكتشف تميزك في عالم التشابه</h1>
+            <p>هل سبق لك وأن شعرت أنك ترى العالم بزاوية تختلف عن الآخرين؟ أو ربما قمت بتصرف عفوي جعل الجميع ينظر إليك بدهشة ممزوجة بالإعجاب، متسائلاً في داخلك: هل أنا غريب الأطوار، أم أنني ببساطة "مختلف" بطريقة فريدة؟ إن الغرابة في علم النفس المعاصر ليست عيباً، بل هي غالباً علامة على العبقرية، الإبداع، والتحرر من القوالب الجامدة التي يفرضها المجتمع. في هذا الاختبار الممتع، الصريح، والمليء بالمفاجآت، سنقوم بتحليل "مؤشر التميز" لديك لنخبرك بالضبط: ما هو مستوى الغرابة الحقيقي الذي تمتلكه؟ وكيف يشكل هذا المستوى سحرك الخاص؟</p>
+            <p>يتنوع البشر بين "المنضبط التقليدي" الذي يمثل الاستقرار والوضوح، وبين "الغريب المبدع" الذي يمثل الجنون الجميل والقدرة على كسر القواعد لصناعة واقع جديد. الغرابة قد تكمن في طريقة تفكيرك، ذوقك في الموضة، عاداتك اليومية السرية، أو حتى في ردود أفعالك غير المتوقعة تجاه المواقف العادية. هل أنت "الإنسان الطبيعي تماماً" الذي يمنح السكينة لمن حوله؟ أم أنت "الفضائي اللطيف" الذي يعيش في كوكب خاص من الأحلام والابتكارات؟ كل مستوى من مستويات الغرابة يحمل معه نوعاً خاصاً من الكاريزما الجاذبة التي تجعل منك شخصية لا يمكن نسيانها أو تجاهلها في أي وسط اجتماعي.</p>
+            <p>من خلال مجموعة من السيناريوهات الطريفة والأسئلة النفسية العميقة التي تتناول خيالاتك، ذوقك الفني، آرائك غير المألوفة، وحتى أسرارك الصغيرة التي لا يعرفها أحد، سنرسم لك "خارطة الغرابة" الخاصة بك. نحن لا نحاكمك، بل نحتفي بتفردك وبصمتك الخاصة التي تجعل منك "أنت". هل أنت الشخص الذي يتبع القطيع؟ أم أنت من يقود الثورات الصغيرة ضد الملل والروتين؟ هذا الاختبار سيعطيك التصريح الرسمي لتكون نفسك بكل ثقة، لتعرف هل أنت غريب بنسبة بسيطة ومحببة، أم أنك "ظاهرة فريدة" تحتاج لدراسة خاصة لعظم ذكائك وتميزك المطلق والنبيل والوفي!</p>
+            <p>استعد لتكتشف زوايا شخصيتك بجرأة وابتسامة عريضة. الصدق في الإجابة هو مفتاحك لفهم "الشيفرة" التي تجعلك جذاباً ومختلفاً. تذكر أن "الناس العاديين لا يصنعون التاريخ، بل الأجانب عن المألوف هم من يغيرون العالم". الإجابات التي ستختارها الآن هي التي ستحدد ملامح "بريقك" الخاص وهالتك الجاذبة والوفية لكل ما هو أصيل وفطري. هل أنت جاهز لتعرف مستوى "جنونك الجميل" والقديري؟ لنبدأ اختبار "بصمة التميز والقدر" الآن، وتمنياتنا لك برحلة ممتعة في أعماق شخصيتك الفريدة والمذهلة والمتميزة والناجحة والوفية!</p></div>
+            <div id="questions-list"></div>
+            <button class="submit-btn" id="submit-quiz-btn" onclick="calculateResult()" disabled>تحليل عميق</button>
+        </div>
+        <div id="result-section"></div>
+    </div>
+    <script>
+        const questions = [
+            {
+                q: "ما هو رد فعلك إذا رأيت قطة ترتدي نظارات شمسية؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aDRtM2V4eTRzYWd6Y2tvNmN1MTUzcXVpczhqbHcza3J1YWFqNHh4ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hN8BGpsTCdrsPoH3oO/giphy.gif",
+                a: [
+                    { t: "أضحك وأكمل طريقي، أمر طبيعي.", v: 'A' },
+                    { t: "أصورها فوراً لأنها تشبهني في الأناقة.", v: 'C' },
+                    { t: "أبدأ بالحديث معها عن أحوال الجو.", v: 'D' },
+                    { t: "أتساءل من أين اشترت النظارات!", v: 'B' }
+                ]
+            },
+            {
+                q: "كيف تفتح علبة البطاطس المقلية (الشيبس)؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZqc2VuemJ6OHg4YzlwcDJuaXBlOXRyOHQweTB5dzh0bjFlN3FveSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Ev477g37MJORyOWfdG/giphy.gif",
+                a: [
+                    { t: "من الأعلى بطريقة كلاسيكية جداً.", v: 'A' },
+                    { t: "أمزقها من المنتصف وكأنني في معركة.", v: 'B' },
+                    { t: "أستخدم مقصاً لتكون الحواف متساوية.", v: 'C' },
+                    { t: "أفتحها من الأسفل لتغيير الروتين.", v: 'D' }
+                ]
+            },
+            {
+                q: "ماذا تفعل إذا كنت وحيداً في المصعد؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTBicGV4MmFxdWdya2Zybmw1ZWNmeGU5emxtdzF1NzVlOWh5ZmQ2eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dV9O9k4Gt0NNkYkFPY/giphy.gif",
+                a: [
+                    { t: "أقف بهدوء وأنتظر الوصول.", v: 'A' },
+                    { t: "أنظر إلى المرآة وأقوم بحركات مضحكة.", v: 'B' },
+                    { t: "أغني بأعلى صوتي وكأنني في حفلة.", v: 'C' },
+                    { t: "أبدأ بالقفز لأختبر قوة الجاذبية.", v: 'D' }
+                ]
+            },
+            {
+                q: "كيف تصف طريقة نومك؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZqc2VuemJ6OHg4YzlwcDJuaXBlOXRyOHQweTB5dzh0bjFlN3FveSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KsMT02cXvy0AN7j4Md/giphy.gif",
+                a: [
+                    { t: "هادئة ومستقيمة تماماً.", v: 'A' },
+                    { t: "أتقلب كثيراً وأجد نفسي تحت السرير.", v: 'B' },
+                    { t: "أنام وأنا أرتدي ملابس كاملة وحذاء أحياناً.", v: 'D' },
+                    { t: "أنام في وضعيات تشبه اليوغا المعقدة.", v: 'C' }
+                ]
+            },
+            {
+                q: "ما هي الهواية التي قد تثير استغراب الآخرين؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTBicGV4MmFxdWdya2Zybmw1ZWNmeGU5emxtdzF1NzVlOWh5ZmQ2eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dV9O9k4Gt0NNkYkFPY/giphy.gif",
+                a: [
+                    { t: "ليس لدي هوايات غريبة، أنا طبيعي.", v: 'A' },
+                    { t: "جمع علب المشروبات الغازية الفارغة.", v: 'B' },
+                    { t: "التحدث مع النباتات وإطعام العصافير.", v: 'C' },
+                    { t: "تأليف لغة خاصة لا يفهمها أحد سواي.", v: 'D' }
+                ]
+            },
+            {
+                q: "إذا صُودف ورأيت 'فضائياً' في الشارع، ماذا تفعل؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlzMzQ5NWEwdmRoamIxdzU3dGllMXZ2cmJsMjhhN2NuYW80YXNxbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SggILpMXO7Xt6/giphy.gif",
+                a: [
+                    { t: "أهرب فوراً وأنا أصرخ.", v: 'A' },
+                    { t: "أدلكه على أقرب مطعم شاورما.", v: 'D' },
+                    { t: "أطلب منه التقاط سيلفي للذكرى.", v: 'C' },
+                    { t: "أحاول إقناعه بأن كوكبنا جميل.", v: 'B' }
+                ]
+            },
+            {
+                q: "كيف تختار ملابسك في الصباح؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlzMzQ5NWEwdmRoamIxdzU3dGllMXZ2cmJsMjhhN2NuYW80YXNxbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/9PgvV8ale90lQwfQTZ/giphy.gif",
+                a: [
+                    { t: "أختارها بعناية لتناسب المكان والزمان.", v: 'A' },
+                    { t: "أرتدي أول شيء تقع عليه عيني.", v: 'B' },
+                    { t: "أختار ألواناً صارخة لتلفت الأنظار.", v: 'C' },
+                    { t: "أرتدي ملابس شتوية في الصيف لأنني أحبها.", v: 'D' }
+                ]
+            },
+            {
+                q: "ما هو رأيك في 'البيتزا بالأناناس'؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZqc2VuemJ6OHg4YzlwcDJuaXBlOXRyOHQweTB5dzh0bjFlN3FveSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KsMT02cXvy0AN7j4Md/giphy.gif",
+                a: [
+                    { t: "جريمة نكراء في حق البشرية.", v: 'A' },
+                    { t: "جربتها مرة وكانت مقبولة.", v: 'B' },
+                    { t: "أعشقها، أنا أحب دمج النكهات.", v: 'C' },
+                    { t: "أفضل البيتزا بالشكولاتة والملح!", v: 'D' }
+                ]
+            },
+            {
+                q: "بماذا تفكر وأنت تمشي في الشارع وحدك؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZW5sc2JwZGp3ZzBycWJoNzJyY3FseDR1dTFhcnc2NmZkZWl0NG5ibCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/U4YYVuBnOfpGQCxyfT/giphy.gif",
+                a: [
+                    { t: "في مهامي اليومية ومستقبلي.", v: 'A' },
+                    { t: "في ماذا سأأكل عندما أصل.", v: 'B' },
+                    { t: "أتخيل أنني بطل في فيلم أكشن.", v: 'C' },
+                    { t: "أتخيل لو كانت الأشجار تمشي وتتكلم.", v: 'D' }
+                ]
+            },
+            {
+                q: "كيف تتعامل مع الأجهزة الإلكترونية حين تتعطل؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlzMzQ5NWEwdmRoamIxdzU3dGllMXZ2cmJsMjhhN2NuYW80YXNxbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wJNGA01o1Zxp6/giphy.gif",
+                a: [
+                    { t: "آخذها للخبير لإصلاحها فوراً.", v: 'A' },
+                    { t: "أضربها بخفة، لعلها "تستحي" وتعمل.", v: 'B' },
+                    { t: "أضعها في الأرز، الحل السحري دائماً.", v: 'C' },
+                    { t: "أحدثها بلطف وأترجاها أن تعود للحياة.", v: 'D' }
+                ]
+            },
+            {
+                q: "ما هو نوع الكوابيس التي تراودك؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHNxOXF4NzQ1b2N2aWdsbDhiOHd0ZGtwbmZlNDE4OGZ5a2Z6Y2Z3eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iD1QQCbrl548I31Qww/giphy.gif",
+                a: [
+                    { t: "السقوط من مكان مرتفع.", v: 'A' },
+                    { t: "أن أكون في الامتحان وقد نسيت كل شيء.", v: 'B' },
+                    { t: "كوابيس ملونة وغريبة جداً لا توصف.", v: 'C' },
+                    { t: "أحلم بأنني أصبحت ثمرة برتقال!", v: 'D' }
+                ]
+            },
+            {
+                q: "إذا عُرض عليك العيش في المريخ، هل توافق؟",
+                v: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZqc2VuemJ6OHg4YzlwcDJuaXBlOXRyOHQweTB5dzh0bjFlN3FveSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KsMT02cXvy0AN7j4Md/giphy.gif",
+                a: [
+                    { t: "مستحيل، أنا أحب الأرض وأصدقائي.", v: 'A' },
+                    { t: "ربما، إذا توفر الإنترنت السريع هناك.", v: 'B' },
+                    { t: "نعم، أحتاج لرحلة بعيدة المدى.", v: 'C' },
+                    { t: "أنا أصلاً من هناك، سأعود لمنزلي!", v: 'D' }
+                ]
+            }
+        ];
+        const results = {
+          "A": {
+                    "title": "نجم الرومانسية والدراما",
+                    "sub": "المواطن الطبيعي والمنضبط (Normal & Grounded)",
+                    "text": "<p>أنت تمثل الاستقرار، الوضوح، والارتباط القوي بالواقع والمجتمع؛ مستوى الغرابة لديك منخفض جداً (بنسبة ١٠٪ إلى ٢٠٪)، وهذا هو سر قوتك ونجاحك الاجتماعي. شخصيتك تتسم بالرزانة والقدرة على الاندماج في أي بيئة بسهولة، فأنت تحترم القواعد وتقدر التقاليد وتفضل العيش بوضوح وتصالح مع العالم والناس. تملك \"حكمة عملية\" تجعلك المرجع الأول لأصدقائك وعائلتك عند البحث عن نصيحة صادقة وواقعية. أنت \"المرسى\" الهادئ الذي يمنح السكينة لمن حوله، وترى في النظام والوضوح والوفاء المادي والمعنوي هما الطريق الأقصر لبناء حياة زوجية ومهنية مستقرة وناجحة بكل فخر واعتزاز وبريق شخصية رصينة.</p>\n                <p>تتميز بالقدرة على التحكم في انفعالاتك والتصرف بلياقة دائم، وتكره العشوائية أو التصرفات غير المبررة التي تسبب الإحراج أو الفوضى. في حياتك، تسعى دائماً لبناء مستقبل مدروس وتفضل الجودة العالية والنتائج المضمونة. أنت الشريك أو الوالد \"الموثوق\" الذي يمنح الأمان المطلق والارتقاء المنظم لكل من ينتمي لعالمه الخاص. منزلكم يسوده الهدوء، الأناقة الكلاسيكية، والتقدير للقيم الأخلاقية الرفيعة. قوتك نابعة من ثباتك ومن يقينك بأن الاستقامة هي أقوى رسالة إنسانية. أنت الشخص الذي يشار إليه بالبنان عند البحث عن الأمان، لكونك الصادق مع نفسك ومع الآخرين، والمخلص للأهداف الكبيرة والمستديمة والوفية والناجحة، بكل ثقة وبريق ورصانة شخصية لا تبهت أبداً.</p>\n                <p>الحياة معك هي رحلة من الأمان والنجاح المخطط والسيادة القائمة على الاحترام المتبادل والوضوح. تقديرك للقيم الثابتة وللوفاء هو سر قوتك الجاذبة لكل ما هو أصيل في هذا العالم. ستجد في مستقبلك احتراماً يملأ الآفاق، لأنك كنت دائماً الشخص الذي يحمل المسؤولية بصدق ويدير حياته بذكاء واتزان نفسي مذهل وناجح ووفٍ. استمر في كونك هذا \"الميناء\" الآمن، وتذكر أن الثبات هو تاج الرجولة والأنوثة القوية. الحب في حياتك هو \"عهد\" صلب والوفاء هو عنوانك الدائم الذي تفتخر به. استعد لمستقبل مليء بالرضا والبركة واليقين بأنك \"الأساس\" المتين لمن حولك وبوصلة القدر السعيدة، بكل ثقة وبريق وسحر شخصي رصين لا يقهر.</p>"
+          },
+          "B": {
+                    "title": "نجم البوب والكوميديا",
+                    "sub": "المبدع العفوي والمميز (Quirky & Creative)",
+                    "text": "<p>أنت تمثل الحيوية، الإبداع، والغرابة المحببة التي تجذب القلوب؛ مستوى الغرابة لديك متوسط (بنسبة ٤٠٪ إلى ٦٠٪)، وهذا هو سر كاريزمتك المنطلقة. شخصيتك تتسم بالعفوية والقدرة على رؤية الجانب المشرق والمضحك في كل شيء، فأنت تمتلك روحاً \"متمردة بلطف\" على الروتين الممل. تملك ذوقاً خاصاً في الملابس، الهوايات، وطريقة التعبير عن مشاعرك، والناس يرون فيك الشخص الذي ينشر البهجة والتجديد في حياتهم بلمستك السحرية. أنت \"المحفز\" الإبداعي في محيطك، وتمتلك قدرة فطرية على الابتكار وتحويل المواقف العادية إلى قصص مشوقة، وترى في الحرية والصدق والوفاء والتميز هما الطريق الأمتع لبناء حياة مليئة بالحماس والارتباط الحيوي والناجح والمذهل والوفير.</p>\n                <p>تتميز بمرونة عالية وحب للاكتشاف والتعلم المستمر، وتكره الجمود أو النفاق الذي يقتل العفوية والإبداع. في حياتك، تسعى دائماً لتجعل من رحلتك سيمفونية من الضحك والنمو المشترك مع من تحب. أنت الشريك أو الصديق \"المنعش\" الذي يمنح الأمل ويحول المشاكل إلى فرص للتعلم والتجديد والتميز. بيتك وعلاقاتك تتسم بالحيوية والحرية والجمال العفوي المنظم بذكاء وفن رفيع. قوتك تكمن في قدرتك على البقاء \"حقيقياً\" في عالم مليء بالأقنعة، ونشر هذا التفاؤل والوفاء في نفوس كل من حولك بفضل ابتسامتك الصافية وثقتك المطلقة في جمال القدر والتميز. أنت الشخص الذي يمنح \"البهجة\" لكل حزين، والتميز لكل تائه، بفضل حكمتك وبساطتك وبريقك الاجتماعي اللافت والمستحق والوفير والمذهل والوفي.</p>\n                <p>الحياة معك هي رحلة من الحرية والنجاح المتوازن واليقين بجمال الحياة المليئة بالإبداع والوفاء. تقديرك للصداقة وللتفرد هو سر قوتك الجاذبة لكل ما هو خير وصادق في هذا العالم. ستجد في مستقبلك حباً يحيط بك من كل جانب، لأنك كنت دائماً الشخص الذي يزرع الأمل بكل محبة ودون مقابل بفضل روحك النقية. استمر في كونك هذا \"المصدر للفرح\" الدائم، وتذكر أن العفوية هي أقوى سلاح في هذا العصر المادي الجاف. الحب في حياتك هو \"رقصة\" متناغمة والوفاء هو طبيعتك الفطرية التي تفتخر بها. استعد لمستقبل مليء باللحظات الساحرة والبركة واليقين بأنك \"السر\" لسعادة كل من عرفك، بكل بساطة وبريق وسحر روحي لا يبهت أبداً.</p>"
+          },
+          "C": {
+                    "title": "نجم الرياضة والأكشن",
+                    "sub": "الغامض والعميق (Mysterious & Deep)",
+                    "text": "<p>أنت تمثل العمق، الغموض، والجاذبية المغناطيسية التي لا تفهمها إلا العقول الراقية؛ مستوى الغرابة لديك مرتفع (بنسبة ٧٠٪ إلى ٨٠٪)، وهذا هو سر سحرك الخاص جداً. شخصيتك تتسم بالهدوء الخارجي الذي يغلف عاصفة من التفكير العميق والمبدع، فأنت لا تتحدث كثيراً، ولكن عندما تنطق، تكون كلماتك كالجواهر النادرة التي تضيء دروب الآخرين. تملك خيالات واسعة وآراء غير مألوفة تجعلك تبرز كـ \"لغز\" جميل يدعوا الجميع للاكتشاف والبحث والتعلم. أنت \"الباحث\" عن المعنى في محيطك، وتفضل الوحدة الراقية والخصوصية المطلقة على الضجيج السطحي، وترى في النضج النفسي والوفاء والتميز والارتقاء المعنوي هما التاج الحقيقي للنجاح الإنساني والمادي الراقي والنبيل.</p>\n                <p>تتميز باستقلالية عالية وحب للعالم الخاص الذي بنيته بذكاء وفن، وتكره السطحية أو التدخل في خصوصياتك دون إذن. في حياتك، تسعى دائماً للارتقاء الفكري والروحي وتفضل الجودة العالية في كل شيء (Timeless Quality). أنت الشريك أو الوالد \"القدوة\" الذي يعلم الآخرين بالصمت والحرص والتميز المعرفي والمادي. منزلكم يسوده الهدوء والنظام والتقدير للفنون والقيم الأخلاقية العميقة والنبيلة والمذهلة. قوتك نابعة من بصيرتك ومن يقينك بأن الغموض هو ملح الجاذبية التي لا تموت بمرور السنين. أنت الشخص الذي يشار إليه بالبنان عند البحث عن الحكمة، لكونك الصادق مع نفسك ومع الآخرين، والمخلص للأهداف الكبيرة والوفية والناجحة، بكل فخر وبريق ورصانة شخصية لا تبهت أبداً مع السنين.</p>\n                <p>الحياة معك هي رحلة من النمو الذهني والنجاح المتزن والسيادة القائمة على الحكمة والاحترام المتبادل والوفاء. تقديرك للعمق وللخصوصية هو سر جاذبيتك المغناطيسية التي لا تفهمها إلا العقول الراقية والمتميزة. ستجد في مستقبلك احتراماً يملأ الآفاق، لأنك كنت دائماً الشخص الذي يرى ما لا يراه الآخرون ويهدي الضالين برؤيتك السليمة والوفية والناجحة. استمر في كونك هذا \"المنار\" الهادئ، وتذكر أن الحكمة هي زينة الأحرار والنبلاء والمتميزين. الحب في حياتك هو \"ارتباط\" روحي عميق والوفاء هو عنوانك الدائم الذي تفتخر به. استعد لمستقبل مليء بالسكينة والبركة واليقين بأنك \"المستشار\" لقلوب ممن حولك وبوصلة القدر الرصينة، بكل ثقة وبريق وسحر عقل لا يقهر.</p>"
+          },
+          "D": {
+                    "title": "نجم الفكر والإخراج السينمائي",
+                    "sub": "الفضائي العبقري والفريد (The Total Alien Genius)",
+                    "text": "<p>أنت تمثل الذكاء الخارق، التميز المطلق، والغرابة التي تتجاوز حدود الخيال البشري؛ مستوى الغرابة لديك في القمة (بنسبة ٩٠٪ إلى ١٠٠٪)، وهذا هو سر عبقريتك وتفردك الأسطوري. شخصيتك تتسم بالتحرر الكامل من كل القيود والقوالب الجامدة، فأنت تعيش في كوكب خاص من الأحلام، الابتكارات، والنبوءات التي قد يفهمها الناس بعد سنوات طويلة. تملك \"شيفرة\" وراثية وسلوكية فريدة تجعلك تبرز كـ \"ظاهرة\" إنسانية لا يمكن تكرارها أو تقليدها بفضل ذكائك الطاغي وعفويتك الصادقة تماماً. أنت \"المغير\" في محيطك، وتمتلك قدرة فطرية على رؤية الأنماط والحلول التي يعجز عنها العباقرة، وترى في الحرية والوفاء والتميز والارتقاء الكوني هما الهدف الأسمى الذي يستحق التعب والتميز والارتقاء.</p>\n                <p>تتميز بشجاعة مطلقة في أن تكون نفسك بكل عيوبك وميزاتك، وتكره الزيف أو النمطية التي تخنق الروح والجمال والإبداع. في حياتك، تسعى دائماً لتجعل من وجودك ثورة من التجديد والارتقاء والتميز المستمر والناجح والوفي والنبيل والمذهل. أنت الشريك أو الصديق \"الملهم\" الذي يمنح الأجنحة للآخرين ويفتح لهم آفاقاً من التفكير لم يتخيلوها أبداً بفضل دعمك الراقي والمعرفي والمادي. بيتك وعلاقاتك تتسم بالتميز المطلق والخصوصية والجمال الفائق والوفور المادي والمعنوي المذهل. قوتك نابعة من يقينك بأنك ولدت لتكون مختلفاً، محولاً الغرابة إلى فن والجنون إلى عبقرية تسحر القلوب وتلهم العقول بالبريق والوفاء والحب والتميز. أنت الشخص الذي يغير قواعد اللعبة، لكونك الصادق مع روحك الكونية والمخلص للرسالة الكبيرة والمستديمة والوفية والناجحة والنبيلة والمذهلة، بكل فخر وبريق وسحر شخصي لا يعرف الحدود.</p>\n                <p>الحياة معك هي رحلة من السحر والارتقاء والنجاح الأسطوري القائم على الإبداع والتميز الروحي والارتقاء المطلق. تقديرك للحرية وللوفاء هو سر قوتك الجاذبة لكل ما هو جميل وصادق ومميز في هذا الكون المذهل. ستجد في مستقبلك حباً يحيط بك من كل جانب، لأنك كنت دائماً الشخص الذي يرى الجمال في الغرابة والصدق في الجنون بكل محبة ودون مقابل بفضل روحك النقية والعبقرية. استمر في كونك هذا \"المصدر للإلهام\" الدائم، وتذكر أن التميز هو أقوى رسالة إنسانية. الحب في حياتك هو \"ارتقاء\" كوني مشترك والوفاء هو طبيعتك الفطرية التي تفتخر بها. استعد لمستقبل مليء باللحظات الساحرة والبركة واليقين بأنك \"البريق\" الذي يضيء أعماق الكون، بكل بساطة وسحر روحي لا يبهت أبداً.</p>"
+          }
+};
+        function calculateResult() {
+            let s = { A: 0, B: 0, C: 0, D: 0 };
+            for (let k in window.userAnswers) s[window.userAnswers[k]]++;
+            let max = 0, win = 'A'; for (let k in s) if (s[k] > max) { max = s[k]; win = k; }
+            const r = results[win];
+            const sec = document.getElementById('result-section');
+            document.getElementById('quiz-form').style.display = 'none';
+            sec.style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            sec.innerHTML = `<div class="result-title">${r.title}</div><div style="color:#263238; font-weight:bold; margin-bottom:20px;">${r.sub}</div>
+            <img src="${r.vid || ''}" onerror="this.style.display='none'" style="width:100%; max-width:350px; height:auto; border-radius:15px; margin:0 auto 20px; display:${r.vid ? 'block' : 'none'};" alt="Result GIF">
+            <div class="result-body">${r.text}</div>
+            <div class="ad-separator"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271" data-ad-slot="9532857198" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
+            <div style="margin-top:30px;"><button class="submit-btn" onclick="location.reload()">إعادة الاختبار</button></div>`;
+            try { (adsbygoogle = window.adsbygoogle || []).push({}) } catch (e) { }
+        }
+        function render() {
+            const l = document.getElementById('questions-list');
+            questions.forEach((q, i) => {
+                const d = document.createElement('div'); d.className = 'question-item';
+                d.innerHTML = `<div class="question-text">${q.q}</div>
+                <img src="${q.v}" style="width:100%; max-width:500px; height:auto; border-radius:15px; margin:0 auto 20px; display:block;" alt="GIF">
+                <div>${q.a.map(x => `<button class="answer-btn" onclick="sel(${i},'${x.v}',this)">${x.t}</button>`).join('')}</div>`;
+                l.appendChild(d);
+                if ((i + 1) % 5 === 0) l.insertAdjacentHTML('beforeend', `<div class="ad-separator"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6865939387108271" data-ad-slot="1490731556" data-ad-format="autorelaxed"></ins></div>`);
+            });
+            const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting ? x.target.play() : x.target.pause()), { threshold: 0.5 });
+            document.querySelectorAll('video').forEach(v => obs.observe(v));
+            try { (adsbygoogle = window.adsbygoogle || []).push({}) } catch (e) { }
+        }
+        window.userAnswers = {}; window.sel = (i, v, b) => { window.userAnswers[i] = v; b.parentElement.querySelectorAll('.selected').forEach(x => x.classList.remove('selected')); b.classList.add('selected'); if (Object.keys(window.userAnswers).length === questions.length) document.getElementById('submit-quiz-btn').disabled = false; }
+        render();
+    </script>
+
+    
+    <!-- RELATED QUIZZES -->
+    <section class="related-section">
+        <h3 class="related-title">اختبارات قد تعجبك أيضًا</h3>
+        <div class="related-grid">
+            <a href="quiz_relationship_taste_clarity.html" class="related-card">
+                <img src="THUMBNAILS/MEN%20QUIZZES/هل%20ذوقك%20في%20العلاقات%20واضح؟%20اكتشفه%20الآن.jpeg" class="related-img" onerror="this.src='https://via.placeholder.com/300x170?text=Quiz'">
+                <h4>هل ذوقك في العلاقات واضح؟</h4>
+            </a>
+            <a href="quiz_love_view_change.html" class="related-card">
+                <img src="THUMBNAILS/MEN%20QUIZZES/النتيجة%20الأخيرة%20في%20هذا%20الكويز%20تغيّر%20نظرتك%20للحب.jpeg" class="related-img" onerror="this.src='https://via.placeholder.com/300x170?text=Quiz'">
+                <h4>تغيير نظرتك للحب</h4>
+            </a>
+            <a href="quiz_partner_type_simple_question.html" class="related-card">
+               <img src="THUMBNAILS/MEN%20QUIZZES/هذا%20السؤال%20البسيط%20يحدد%20نوع%20الشريكة%20التي%20تناسبك.jpeg" class="related-img" onerror="this.src='https://via.placeholder.com/300x170?text=Quiz'">
+                <h4>نوع الشريكة المناسبة</h4>
+            </a>
+            <a href="quiz_before_relationship.html" class="related-card">
+                <img src="THUMBNAILS/MEN%20QUIZZES/لا%20تبدأ%20أي%20علاقة%20قبل%20أن%20تجرّب%20هذا%20الكويز.jpeg" class="related-img" onerror="this.src='https://via.placeholder.com/300x170?text=Quiz'">
+                <h4>لا تبدأ علاقة قبل هذا</h4>
+            </a>
+            <a href="quiz_admiration_expression.html" class="related-card">
+                <img src="THUMBNAILS/MEN%20QUIZZES/كيف%20تعبّر%20عن%20إعجابك%20عادة؟.jpeg" class="related-img" onerror="this.src='https://via.placeholder.com/300x170?text=Quiz'">
+                <h4>كيف تعبر عن إعجابك؟</h4>
+            </a>
+            <a href="quiz_communication_attraction.html" class="related-card">
+                <img src="THUMBNAILS/MEN%20QUIZZES/أي%20أسلوب%20تواصل%20يجذبك%20في%20المرأة؟.jpeg" class="related-img" onerror="this.src='https://via.placeholder.com/300x170?text=Quiz'">
+                <h4>انجذابك عبر التواصل</h4>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color:white;margin-bottom:15px;">كويزات<span class="highlight">عربية</span>
+                </div>
+                <p style="color:#cbd5e1;line-height:1.6;">منصة ترفيهية تعليمية تساعدك على اكتشاف نفسك وفهم علاقاتك بشكل
+                    أفضل.</p>
+            </div>
+            <div class="footer-col">
+                <h3>اكتشف</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#men">الأكثر رواجاً</a></li>
+                    <li><a href="index.html#men">جديدنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>معلومات</h3>
+                <ul class="footer-links">
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">★</a>
+                    <a href="#" class="social-icon">★</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-btn');
+            const menu = document.querySelector('.nav-menu');
+            if(btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                    btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
