@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & Social Meta Tags -->
+    <meta name="description" content="أجمل الخلفيات المتحركة للهاتف بجودة عالية. خلفيات فيديو، خلفيات حية، وخلفيات 4K.">
+    <link rel="canonical" href="https://darlma3rifa.com/wallpapers.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="خلفيات متحركة | كويزات عربية">
+    <meta property="og:description" content="أجمل الخلفيات المتحركة للهاتف بجودة عالية.">
+    <meta property="og:image" content="https://darlma3rifa.com/THUMBNAILS/WALLPAPERS/LIVE WALLPAPERS (1).mp4">
+    <title>خلفيات متحركة | كويزات عربية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+        :root {
+            --primary: #c2185b;
+            --secondary: #7b1fa2;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --surface: #ffffff;
+            --accent: #ffd700;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            direction: rtl;
+        }
+
+        /* HEADER & NAVIGATION (Copied from index.html) */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo .highlight {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        @media (max-width: 900px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* WALLPAPER GRID */
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin: 40px 0;
+            font-weight: 900;
+        }
+
+        .wallpapers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding-bottom: 60px;
+        }
+
+        .wallpaper-card {
+            border-radius: 20px;
+            overflow: hidden;
+            background: black;
+            position: relative;
+            aspect-ratio: 9/16;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .wallpaper-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .wallpaper-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .wallpaper-card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .download-btn {
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            box-shadow: 0 4px 15px rgba(194, 24, 91, 0.4);
+        }
+
+        .download-btn:hover {
+            background: var(--secondary);
+        }
+
+        /* FOOTER */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 80px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .ad-container {
+            grid-column: 1 / -1;
+            margin: 20px 0;
+            text-align: center;
+            background: #f1f5f9;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">كويزات<span class="highlight">عربية</span></a>
+
+            <button class="mobile-menu-btn">☰</button>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="index.html#men" class="nav-link">للشباب</a>
+                <a href="index.html#women" class="nav-link">للبنات</a>
+                <a href="profile_view.html" class="nav-link">تعارف بنات</a>
+                <a href="wallpapers.html" class="nav-link active">خلفيات متحركة</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="container">
+        <h1 class="page-title">خلفيات متحركة للهاتف</h1>
+        <div class="wallpapers-grid" id="wallpapers-grid">
+            <!-- Videos will be injected here -->
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <div class="logo" style="color:white;">كويزات<span class="highlight">عربية</span></div>
+                <p style="color:#cbd5e1; text-align: center;">منصة ترفيهية تعليمية تساعدك على اكتشاف نفسك.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('wallpapers-grid');
+            const totalVideos = 101;
+            const adFrequency = 9; // Insert ad every 9 videos
+
+            // Intersection Observer for Lazy Loading
+            const observerOptions = {
+                root: null,
+                rootMargin: '50px',
+                threshold: 0.1
+            };
+
+            const videoObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const video = entry.target;
+                        video.src = video.dataset.src;
+                        video.load();
+                        video.play().catch(e => console.log("Autoplay prevented:", e));
+                        observer.unobserve(video);
+                    }
+                });
+            }, observerOptions);
+
+            for (let i = 1; i <= totalVideos; i++) {
+                // Insert Ad
+                if (i > 1 && (i - 1) % adFrequency === 0) {
+                    const adContainer = document.createElement('div');
+                    adContainer.className = 'ad-container';
+                    adContainer.innerHTML = `
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-6865939387108271"
+                             data-ad-slot="8984152115"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                    `;
+                    grid.appendChild(adContainer);
+                    // Push ad scripts
+                    try {
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    } catch (e) { console.error(e); }
+                }
+
+                // Create Card
+                const card = document.createElement('div');
+                card.className = 'wallpaper-card';
+                const videoSrc = `THUMBNAILS/WALLPAPERS/LIVE WALLPAPERS (${i}).mp4`;
+                const viewUrl = `wallpaper_view.html?id=${i}`;
+
+                card.innerHTML = `
+                    <a href="${viewUrl}" style="display:block;width:100%;height:100%;text-decoration:none;">
+                        <video loop muted playsinline data-src="${videoSrc}"></video>
+                        <div class="card-overlay">
+                            <span class="download-btn">
+                                👁️ مشاهدة وتحميل
+                            </span>
+                        </div>
+                    </a>
+                `;
+
+                grid.appendChild(card);
+
+                // Observe video
+                const video = card.querySelector('video');
+                videoObserver.observe(video);
+
+                // Hover effect
+                card.addEventListener('mouseenter', () => video.play().catch(() => { }));
+                card.addEventListener('mouseleave', () => video.pause());
+            }
+
+            // Mobile Menu Logic
+            const btn = document.querySelector('.mobile-menu-btn');
+            const menu = document.querySelector('.nav-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                    btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
