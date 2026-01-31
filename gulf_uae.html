@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أموال الخليج: الإمارات | كويزات عربية</title>
+    <meta name="description"
+        content="دليل الإمارات الشامل للمال والأعمال: بطاقات الائتمان، القروض، الاستثمار، والمزيد في دبي وأبوظبي.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="FAVICON.png" type="image/png">
+    <style>
+        :root {
+            --primary: #00732f;
+            /* UAE Flag Green */
+            --secondary: #ff0000;
+            /* UAE Flag Red */
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --surface: #ffffff;
+            --accent: #ffd700;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-item.dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            min-width: 220px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            border-radius: 12px;
+            padding: 10px 0;
+            flex-direction: column;
+        }
+
+        .nav-item.dropdown:hover .dropdown-content {
+            display: flex;
+        }
+
+        .dropdown-content a {
+            padding: 12px 20px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            display: block;
+            text-align: right;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f5f9;
+            color: var(--primary);
+        }
+
+        .country-hero {
+            background: linear-gradient(135deg, var(--primary), #004d1f);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .country-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('UAE_PATTERN.png');
+            /* If available, or just a subtle gradient overlay */
+            opacity: 0.1;
+        }
+
+        .country-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .country-hero p {
+            position: relative;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .country-flag {
+            font-size: 4rem;
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .grid-container {
+            max-width: 1100px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .cat-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .cat-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .cat-desc {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        @media (max-width: 900px) {
+            .nav-menu {
+                display: none;
+            }
+        }
+
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="LOGO.png" alt="كويزات عربية">
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+
+                <div class="nav-item dropdown">
+                    <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        كويزات <span style="font-size: 0.8em;">▾</span>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="index.html#men">للشباب</a>
+                        <a href="index.html#women">للبنات</a>
+                        <a href="#entertainment">ترفيه</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        أموال الخليج <span style="font-size: 0.8em;">▾</span>
+                    </span>
+                    <div class="dropdown-content" style="min-width: 280px; padding-top:0;">
+                        <div
+                            style="padding: 12px 15px; border-bottom: 1px solid #f1f5f9; font-size: 0.85rem; color: #64748b; background: #f8fafc; border-radius: 12px 12px 0 0; line-height: 1.5;">
+                            كل ما تحتاج معرفته عن المال والتمويل في الخليج العربي
+                        </div>
+                        <a href="gulf_saudi.html">🇸🇦 السعودية</a>
+                        <a href="gulf_uae.html">🇦🇪 الإمارات</a>
+                        <a href="gulf_qatar.html">🇶🇦 قطر</a>
+                        <a href="gulf_kuwait.html">🇰🇼 الكويت</a>
+                        <a href="gulf_bahrain.html">🇧🇭 البحرين</a>
+                        <a href="gulf_oman.html">🇴🇲 عمان</a>
+                    </div>
+                </div>
+
+                <a href="wallpapers.html" class="nav-link">خلفيات متحركة</a>
+                <a href="#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
+            </nav>
+
+            <a href="index.html#men" class="cta-btn">ابدأ الآن</a>
+        </div>
+    </header>
+
+    <section class="country-hero">
+        <span class="country-flag">🇦🇪</span>
+        <h1>دليل المال والأعمال في الإمارات</h1>
+    <!-- ADSENSE_INSERTED_SLOT_1 -->
+    <div align="center" style="margin: 25px 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+             crossorigin="anonymous"></script>
+        <!-- Responsive Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6865939387108271"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+        <p>بوابتك الشاملة للتمويل والاستثمار والخدمات المصرفية في دبي وأبوظبي</p>
+    <!-- ADSENSE_INSERTED_SLOT_2 -->
+    <div align="center" style="margin: 25px 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+             crossorigin="anonymous"></script>
+        <!-- Responsive Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6865939387108271"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    </section>
+
+    <div class="grid-container">
+
+        <a href="uae_credit_cards_hub.html" class="category-card">
+            <span class="cat-icon">💳</span>
+            <div class="cat-title">بطاقات الائتمان</div>
+            <div class="cat-desc">أفضل مكافآت السفر وخصومات التسوق لبطاقات الإمارات.</div>
+        </a>
+
+        <a href="uae_personal_loans_hub.html" class="category-card">
+            <span class="cat-icon">💵</span>
+            <div class="cat-title">القروض الشخصية</div>
+            <div class="cat-desc">تمويل شخصي مرن للمواطنين والمقيمين في الإمارات.</div>
+        </a>
+
+        <a href="uae_car_loans_hub.html" class="category-card">
+            <span class="cat-icon">🚗</span>
+            <div class="cat-title">تمويل السيارات</div>
+            <div class="cat-desc">عروض تمويل السيارات في سوق دبي وأبوظبي.</div>
+        </a>
+
+        <a href="uae_insurance_hub.html" class="category-card">
+            <span class="cat-icon">🛡️</span>
+            <div class="cat-title">التأمين</div>
+            <div class="cat-desc">تأمين صحي وتأمين سيارات بمواصفات عالمية.</div>
+        </a>
+
+        <!-- Investment Hub -->
+        <a href="uae_investment_hub.html" class="category-card">
+            <div class="category-icon">📈</div>
+            <h3 class="category-title">الاستثمار والبورصة</h3>
+            <p class="category-desc">دليلك للأسهم، العقارات، والذهب في الإمارات.</p>
+    <!-- ADSENSE_INSERTED_SLOT_3 -->
+    <div align="center" style="margin: 25px 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+             crossorigin="anonymous"></script>
+        <!-- Responsive Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6865939387108271"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+        </a>
+
+        <a href="uae_mortgages_hub.html" class="category-card">
+            <span class="cat-icon">🏠</span>
+            <div class="cat-title">التمويل العقاري</div>
+            <div class="cat-desc">تملك عقارك في دبي وأبوظبي بأفضل الحلول التمويلية.</div>
+        </a>
+
+        <a href="uae_business_setup_hub.html" class="category-card">
+            <span class="cat-icon">🚀</span>
+            <div class="cat-title">تأسیس الشركات</div>
+            <div class="cat-desc">دلیل تأسیس شركة في المناطق الحرة أو "أونشور" الإمارات.</div>
+        </a>
+
+    </div>
+
+    
+    <!-- ADSENSE_INSERTED_SLOT_5 -->
+    <div align="center" style="margin: 25px 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+             crossorigin="anonymous"></script>
+        <!-- Responsive Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6865939387108271"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="logo" style="margin-bottom:15px;">
+                <img src="FAVICON.png" alt="كويزات عربية" style="height: 50px; width: auto;">
+            </div>
+            <p>أموال الخليج — دليل المستثمر والمغترب في الإمارات العربية المتحدة.</p>
+    <!-- ADSENSE_INSERTED_SLOT_4 -->
+    <div align="center" style="margin: 25px 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+             crossorigin="anonymous"></script>
+        <!-- Responsive Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6865939387108271"
+             data-ad-slot="auto"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; كويزات عربية — جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
