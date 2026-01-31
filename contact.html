@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="????? ???? - ?????? ?????. ??? ??? ??????? ??? ?????? ???????? ???????? ??????????.">
-    <meta name="keywords" content="????? ????, ???? ???, ???, ?????? ?????">
+        content="تواصل معنا - كويزات عربية. نحن هنا للإجابة على أسئلتك واستقبال ملاحظاتك واقتراحاتك.">
+    <meta name="keywords" content="تواصل معنا, اتصل بنا, دعم, كويزات عربية">
 
-    <title>????? ???? - ?????? ?????</title>
+    <title>تواصل معنا - كويزات عربية</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
@@ -805,7 +807,7 @@
         }
         
         .content-card h3::before {
-            content: '?';
+            content: '◆';
             color: var(--accent);
             font-size: 1.2rem;
         }
@@ -836,7 +838,7 @@
         }
         
         .content-card ul li::before {
-            content: '?';
+            content: '✓';
             position: absolute;
             right: 0;
             top: 18px;
@@ -954,7 +956,7 @@
         }
         
         .highlight-box::before {
-            content: '??';
+            content: '💡';
             position: absolute;
             top: 20px;
             left: 20px;
@@ -985,7 +987,7 @@
         }
         
         .warning-box::before {
-            content: '??';
+            content: '⚠️';
             position: absolute;
             top: 20px;
             left: 20px;
@@ -1211,118 +1213,161 @@
             }
         }
 
+    
+        /* HEADER STYLES */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        .header-content { display: flex; align-items: center; justify-content: space-between; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .logo { display: flex; align-items: center; text-decoration: none; }
+        .nav-menu { display: flex; gap: 20px; align-items: center; }
+        .nav-link { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 0.95rem; transition: color 0.3s; position: relative; }
+        .nav-link:hover { color: var(--primary); }
+        .header-actions { display: flex; gap: 15px; align-items: center; }
+        .search-box { position: relative; display: flex; align-items: center; background: #f1f5f9; border-radius: 30px; padding: 5px 15px; border: 2px solid transparent; transition: all 0.3s; }
+        .search-box:focus-within { border-color: var(--primary); background: white; }
+        .search-box input { border: none; background: transparent; outline: none; padding: 5px; width: 120px; font-size: 0.85rem; }
+        .cta-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 8px 20px; border-radius: 30px; text-decoration: none; font-weight: 800; transition: transform 0.3s; font-size: 0.9rem; }
+        .cta-btn:hover { transform: translateY(-2px); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark); }
+
+        /* DROPDOWN STYLES */
+        .nav-item.dropdown { position: relative; }
+        .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: white; min-width: 240px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); z-index: 1100; border-radius: 15px; padding: 10px 0; flex-direction: column; border: 1px solid #f1f5f9; animation: dropdownFade 0.3s ease; }
+        @keyframes dropdownFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-item.dropdown:hover .dropdown-content { display: flex; }
+        .dropdown-content a { color: var(--dark); padding: 10px 20px; text-decoration: none; font-weight: 600; transition: all 0.3s; font-size: 0.9rem; display: flex; align-items: center; gap: 10px; text-align: right; }
+        .dropdown-content a:hover { background-color: #f8fafc; color: var(--primary); padding-right: 25px; }
+
+        @media (max-width: 900px) {
+            .nav-menu, .search-box { display: none; }
+            .mobile-menu-btn { display: block; }
+            .nav-menu.active { display: flex !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-radius: 0 0 30px 30px; }
+            .nav-item.dropdown.open .dropdown-content { display: flex !important; position: static; box-shadow: none; width: 100%; background: #f1f5f9; border-radius: 10px; margin-top: 10px; }
+        }
+
     </style>
 </head>
 
 <body>
     <header class="main-header">
         <div class="container header-content">
-            <a href="index.html" class="logo"><img src="LOGO.png" alt="?????? ?????" style="height: 50px; width: auto;"></a>
+            <a href="index.html" class="logo">
+                <img src="LOGO.png" alt="كويزات عربية" style="height: 45px; width: auto;">
+            </a>
 
             <nav class="nav-menu">
-                <a href="index.html" class="nav-link">????????</a>
+                <a href="index.html" class="nav-link">الرئيسية</a>
 
                 <div class="nav-item dropdown">
                     <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
-                        ?????? <span style="font-size: 0.8em;">?</span>
+                        كويزات <span style="font-size: 0.8em;">▾</span>
                     </span>
                     <div class="dropdown-content">
-                        <a href="index.html#men">??????</a>
-                        <a href="index.html#women">??????</a>
-                        <a href="#entertainment">?????</a>
+                        <a href="index.html#men">للشباب</a>
+                        <a href="index.html#women">للبنات</a>
+                        <a href="index.html#entertainment">ترفيه</a>
                     </div>
                 </div>
 
                 <div class="nav-item dropdown">
                     <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
-                        ????? ?????? <span style="font-size: 0.8em;">?</span>
+                        أموال الخليج <span style="font-size: 0.8em;">▾</span>
                     </span>
                     <div class="dropdown-content" style="min-width: 280px; padding-top:0;">
                         <div style="padding: 12px 15px; border-bottom: 1px solid #f1f5f9; font-size: 0.85rem; color: #64748b; background: #f8fafc; border-radius: 12px 12px 0 0; line-height: 1.5;">
-                            ?? ?? ????? ?????? ?? ????? ???????? ?? ?????? ??????
+                            كل ما تحتاج معرفته عن المال والتمويل في الخليج العربي
                         </div>
-                        <a href="gulf_saudi.html">???? ????????</a>
-                        <a href="gulf_uae.html">???? ????????</a>
-                        <a href="gulf_qatar.html">???? ???</a>
-                        <a href="gulf_kuwait.html">???? ??????</a>
-                        <a href="gulf_bahrain.html">???? ???????</a>
-                        <a href="gulf_oman.html">???? ????</a>
+                        <a href="gulf_saudi.html">🇸🇦 السعودية</a>
+                        <a href="gulf_uae.html">🇦🇪 الإمارات</a>
+                        <a href="gulf_qatar.html">🇶🇦 قطر</a>
+                        <a href="gulf_kuwait.html">🇰🇼 الكويت</a>
+                        <a href="gulf_bahrain.html">🇧🇭 البحرين</a>
+                        <a href="gulf_oman.html">🇴🇲 عمان</a>
                     </div>
                 </div>
 
-                <a href="wallpapers.html" class="nav-link">?????? ??????</a>
-                <a href="#banat" class="nav-link" style="color:#E91E63;font-weight:900;">?? ????? ????</a>
-                <a href="name_compatibility.html" class="nav-link">?? ?????? ????? ???????</a>
+                <a href="wallpapers.html" class="nav-link">خلفيات متحركة</a>
+                <a href="index.html#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
+                <a href="name_compatibility.html" class="nav-link">💑 اختبار توافق الأسماء</a>
             </nav>
 
             <div class="header-actions">
                 <div class="search-box">
-                    <input type="text" placeholder="???? ?? ??????...">
-                    <button class="search-btn" style="background:none;border:none;cursor:pointer;">??</button>
+                    <input type="text" placeholder="ابحث عن اختبار...">
+                    <button class="search-btn" style="background:none;border:none;cursor:pointer;">🔍</button>
                 </div>
-                <a href="#men" class="cta-btn">???? ????</a>
+                <a href="index.html#men" class="cta-btn">ابدأ الآن</a>
             </div>
 
-            <button class="mobile-menu-btn">?</button>
+            <button class="mobile-menu-btn">☰</button>
         </div>
     </header>
 
     <section class="hero">
-        <h1>????? ????</h1>
-        <p>??? ??? ??????? ??? ?????? ???????? ???????? ??????????</p>
+        <h1>تواصل معنا</h1>
+        <p>نحن هنا للإجابة على أسئلتك واستقبال ملاحظاتك واقتراحاتك</p>
     </section>
 
     <div class="content-section">
         <div class="contact-grid">
             <div class="contact-card">
-                <h2>????? ??????? ?????</h2>
+                <h2>لماذا التواصل معنا؟</h2>
                 <p>
-                    ??? ???? ?????? ???? ????? ????? ?????????? ?????????. ?????? ????? ???????? ??:
+                    نحن نقدر تواصلك معنا ونرحب بجميع استفساراتك وملاحظاتك. فريقنا مستعد لمساعدتك في:
                 </p>
                 <ul style="list-style: none; padding: 0; margin-top: 20px;">
                     <li style="padding: 10px 0; padding-right: 25px; position: relative;">
-                        <span style="position: absolute; right: 0; color: var(--primary);">?</span>
-                        ??????? ??? ?????? ??? ??????????
+                        <span style="position: absolute; right: 0; color: var(--primary);">✓</span>
+                        الإجابة على أسئلتك حول الاختبارات
                     </li>
                     <li style="padding: 10px 0; padding-right: 25px; position: relative;">
-                        <span style="position: absolute; right: 0; color: var(--primary);">?</span>
-                        ?? ??????? ???????
+                        <span style="position: absolute; right: 0; color: var(--primary);">✓</span>
+                        حل المشاكل التقنية
                     </li>
                     <li style="padding: 10px 0; padding-right: 25px; position: relative;">
-                        <span style="position: absolute; right: 0; color: var(--primary);">?</span>
-                        ??????? ????????? ????????? ?????
+                        <span style="position: absolute; right: 0; color: var(--primary);">✓</span>
+                        استقبال اقتراحاتك لاختبارات جديدة
                     </li>
                     <li style="padding: 10px 0; padding-right: 25px; position: relative;">
-                        <span style="position: absolute; right: 0; color: var(--primary);">?</span>
-                        ???????? ????????? ?????? ??????
+                        <span style="position: absolute; right: 0; color: var(--primary);">✓</span>
+                        الاستماع لملاحظاتك لتحسين الخدمة
                     </li>
                     <li style="padding: 10px 0; padding-right: 25px; position: relative;">
-                        <span style="position: absolute; right: 0; color: var(--primary);">?</span>
-                        ??????? ?????????
+                        <span style="position: absolute; right: 0; color: var(--primary);">✓</span>
+                        التعاون والشراكات
                     </li>
                 </ul>
 
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">?</div>
+                        <div class="contact-icon">✉</div>
                         <div class="contact-details">
-                            <h3>?????? ??????????</h3>
+                            <h3>البريد الإلكتروني</h3>
                             <p><a href="mailto:info@arabquizzes.com">info@arabquizzes.com</a></p>
                         </div>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">?</div>
+                        <div class="contact-icon">⏱</div>
                         <div class="contact-details">
-                            <h3>??? ?????????</h3>
-                            <p>??? ???? 24-48 ????</p>
+                            <h3>وقت الاستجابة</h3>
+                            <p>نرد خلال 24-48 ساعة</p>
                         </div>
                     </div>
 
                     <div class="contact-item">
-                        <div class="contact-icon">??</div>
+                        <div class="contact-icon">🌐</div>
                         <div class="contact-details">
-                            <h3>?????? ??? ????? ???????</h3>
+                            <h3>تابعنا على وسائل التواصل</h3>
                             <div class="social-links">
                                 <a href="#" class="social-link">f</a>
                                 <a href="#" class="social-link">t</a>
@@ -1334,116 +1379,116 @@
             </div>
 
             <div class="contact-form">
-                <h2>???? ??? ?????</h2>
+                <h2>أرسل لنا رسالة</h2>
                 <form id="contactForm" onsubmit="handleSubmit(event)">
                     <div class="form-group">
-                        <label for="name">????? ?????? *</label>
-                        <input type="text" id="name" name="name" required placeholder="???? ???? ??????">
+                        <label for="name">الاسم الكامل *</label>
+                        <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">?????? ?????????? *</label>
+                        <label for="email">البريد الإلكتروني *</label>
                         <input type="email" id="email" name="email" required placeholder="example@email.com">
                     </div>
 
                     <div class="form-group">
-                        <label for="subject">??????? *</label>
+                        <label for="subject">الموضوع *</label>
                         <select id="subject" name="subject" required>
-                            <option value="">???? ???????</option>
-                            <option value="question">???? ???</option>
-                            <option value="technical">????? ?????</option>
-                            <option value="suggestion">?????? ??????? ????</option>
-                            <option value="feedback">??????? ????????</option>
-                            <option value="partnership">????? ??????</option>
-                            <option value="other">????</option>
+                            <option value="">اختر الموضوع</option>
+                            <option value="question">سؤال عام</option>
+                            <option value="technical">مشكلة تقنية</option>
+                            <option value="suggestion">اقتراح لاختبار جديد</option>
+                            <option value="feedback">ملاحظات وتحسينات</option>
+                            <option value="partnership">تعاون وشراكة</option>
+                            <option value="other">أخرى</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">?????? *</label>
-                        <textarea id="message" name="message" required placeholder="???? ?????? ???..."></textarea>
+                        <label for="message">رسالتك *</label>
+                        <textarea id="message" name="message" required placeholder="اكتب رسالتك هنا..."></textarea>
                     </div>
 
-                    <button type="submit" class="submit-btn">????? ???????</button>
+                    <button type="submit" class="submit-btn">إرسال الرسالة</button>
                 </form>
             </div>
         </div>
 
         <!-- FAQ SECTION -->
         <div class="faq-section">
-            <h2 class="faq-title">??????? ???????</h2>
+            <h2 class="faq-title">الأسئلة الشائعة</h2>
 
             <div class="faq-item">
-                <div class="faq-question">? ?? ?????????? ???????</div>
+                <div class="faq-question">❓ هل الاختبارات مجانية؟</div>
                 <div class="faq-answer">
-                    ???? ???? ?????????? ?????? ??????? ?????? ?????? ??? ?? ???? ?? ????????. ??? ???? ??? ???????
-                    ??????? ?? ??????.
+                    نعم، جميع اختباراتنا مجانية بالكامل ومتاحة للجميع دون أي رسوم أو اشتراكات. نحن نؤمن بأن المعرفة
+                    الذاتية حق للجميع.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ?? ????? ?????????? ??????</div>
+                <div class="faq-question">❓ هل نتائج الاختبارات دقيقة؟</div>
                 <div class="faq-answer">
-                    ?????????? ????? ??? ??? ????? ?? ??? ????? ?????? ?????? ?????? ?????. ??? ???? ??? ????? ??????
-                    ??????? ???????? ??? ???? ????? ???? ?? ????? ?????. ?????? ??? ????? ????? ???? ???????? ?????
-                    ????.
+                    اختباراتنا مبنية على أسس علمية من علم النفس الحديث ومصممة بعناية فائقة. ومع ذلك، فهي مصممة لأغراض
+                    ترفيهية وتعليمية ولا تشكل نصيحة طبية أو نفسية مهنية. للحصول على تقييم شامل، ننصح باستشارة متخصص
+                    مؤهل.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ?? ???????? ?????</div>
+                <div class="faq-question">❓ هل معلوماتي آمنة؟</div>
                 <div class="faq-answer">
-                    ???? ??? ???? ??????? ????? ??????? ??? ???? ????. ?????? ?????? ????? ?????? ??? ????? ????????
-                    ??????? ?? ????? ?????. ????? ????? ?????? ?? <a href="privacy.html"
-                        style="color: var(--primary); font-weight: bold;">????? ????????</a>.
+                    نعم، نحن نأخذ خصوصيتك وأمان بياناتك على محمل الجد. نستخدم تقنيات تشفير متقدمة ولا نشارك معلوماتك
+                    الشخصية مع أطراف ثالثة. يمكنك قراءة المزيد في <a href="privacy.html"
+                        style="color: var(--primary); font-weight: bold;">سياسة الخصوصية</a>.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ??? ?????? ?????? ?????? ?????</div>
+                <div class="faq-question">❓ كيف يمكنني اقتراح اختبار جديد؟</div>
                 <div class="faq-answer">
-                    ??? ???? ???????????! ????? ????? ????? ??? ????? ??????? ????? ??????? "?????? ??????? ????"
-                    ??????. ????? ??????? ???? ?????????? ?????? ??? ????? ??????? ?????? ?????.
+                    نحن نرحب باقتراحاتكم! يمكنك إرسال فكرتك عبر نموذج الاتصال أعلاه واختيار "اقتراح لاختبار جديد"
+                    كموضوع. سنقوم بمراجعة جميع الاقتراحات والعمل على تطوير الأفكار الأكثر طلباً.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ????? ?? ???? ???????</div>
+                <div class="faq-question">❓ لماذا لا تظهر نتيجتي؟</div>
                 <div class="faq-answer">
-                    ???? ?? ??? ???? ??? ???? ??????? ??? ????? ??? ?? "????? ????". ??? ?????? ???????? ???? ?????
-                    ?????? ?? ??????? ????? ???. ??? ?? ??? ???????? ???? ??????? ???? ?? ??? ?????? ???????.
+                    تأكد من أنك أجبت على جميع الأسئلة قبل الضغط على زر "تحليل عميق". إذا استمرت المشكلة، حاول تحديث
+                    الصفحة أو استخدام متصفح آخر. إذا لم تحل المشكلة، يرجى التواصل معنا مع وصف تفصيلي للمشكلة.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ?? ?????? ?????? ???????</div>
+                <div class="faq-question">❓ هل يمكنني مشاركة نتائجي؟</div>
                 <div class="faq-answer">
-                    ????????! ????? ?????? ?????? ??? ???? ????? ??????? ????????? (WhatsApp? Facebook? Twitter? ??????)
-                    ???????? ????? ???????? ???????? ?? ???? ???????.
+                    بالتأكيد! يمكنك مشاركة نتائجك على جميع منصات التواصل الاجتماعي (WhatsApp، Facebook، Twitter، وغيرها)
+                    باستخدام أزرار المشاركة الموجودة في صفحة النتائج.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ?? ??? ?????? ????? ?????????</div>
+                <div class="faq-question">❓ كم مرة يمكنني إعادة الاختبار؟</div>
                 <div class="faq-answer">
-                    ????? ????? ?? ?????? ??? ??? ????? ?? ??????. ??? ???? ?????? ??? ???? ???????? ???? ???????? ????
-                    ?????? ?? ????? ??????.
+                    يمكنك إعادة أي اختبار عدد غير محدود من المرات. ومع ذلك، للحصول على أفضل النتائج، ننصح بالإجابة بصدق
+                    وعفوية في المرة الأولى.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ?? ?????? ???????? ??????</div>
+                <div class="faq-question">❓ هل تقدمون استشارات نفسية؟</div>
                 <div class="faq-answer">
-                    ??? ??? ???? ??????? ??????? ??? ???? ???????? ????? ?? ???? ?????. ??? ??? ????? ??? ?????? ???????
-                    ???? ???? ???????? ???? ???? ?? ????? ????.
+                    لا، نحن منصة ترفيهية تعليمية ولا نقدم استشارات نفسية أو طبية مهنية. إذا كنت تحتاج إلى مساعدة متخصصة،
+                    ننصح بشدة باستشارة طبيب نفسي أو معالج مؤهل.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">? ??? ?????? ??????? ?????</div>
+                <div class="faq-question">❓ كيف يمكنني التعاون معكم؟</div>
                 <div class="faq-answer">
-                    ??? ??????? ??? ??? ??????? ?????????! ???? ??????? ???? ??? ????? ??????? ????? ??????? "?????
-                    ??????" ??????? ?????? ????? ??????? ????? ???????.
+                    نحن منفتحون على فرص التعاون والشراكات! يرجى التواصل معنا عبر نموذج الاتصال أعلاه واختيار "تعاون
+                    وشراكة" كموضوع، وسنكون سعداء بمناقشة الفرص المتاحة.
                 </div>
             </div>
         </div>
@@ -1453,34 +1498,34 @@
         <div class="container footer-grid">
             <div class="footer-col">
                 <div class="logo" style="margin-bottom:15px;">
-                    <img src="FAVICON.png" alt="?????? ?????" style="height: 50px; width: auto;">
+                    <img src="FAVICON.png" alt="كويزات عربية" style="height: 50px; width: auto;">
                 </div>
-                <p style="color:#cbd5e1;line-height:1.6;">???? ??????? ??????? ?????? ??? ?????? ???? ???? ??????? ????
-                    ???? ?? ???? ???????? ????? ??????.</p>
+                <p style="color:#cbd5e1;line-height:1.6;">منصة ترفيهية تعليمية تساعدك على اكتشاف نفسك وفهم علاقاتك بشكل
+                    أفضل من خلال اختبارات ممتعة ودقيقة.</p>
             </div>
 
             <div class="footer-col">
-                <h3>?????</h3>
+                <h3>اكتشف</h3>
                 <ul class="footer-links">
-                    <li><a href="#men">?????? ??????</a></li>
-                    <li><a href="#men">??????</a></li>
-                    <li><a href="#men">???????? ????</a></li>
-                    <li><a href="#men">????? ???????</a></li>
+                    <li><a href="index.html#men">الأكثر رواجاً</a></li>
+                    <li><a href="index.html#men">جديدنا</a></li>
+                    <li><a href="index.html#men">اختبارات الحب</a></li>
+                    <li><a href="index.html#men">تحليل الشخصية</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h3>???????</h3>
+                <h3>معلومات</h3>
                 <ul class="footer-links">
-                    <li><a href="about.html">?? ???</a></li>
-                    <li><a href="privacy.html">????? ????????</a></li>
-                    <li><a href="terms.html">???? ?????????</a></li>
-                    <li><a href="contact.html">????? ????</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="terms.html">شروط الاستخدام</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h3>??????</h3>
+                <h3>تابعنا</h3>
                 <div class="social-icons">
                     <a href="#" class="social-icon">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -1506,8 +1551,8 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy;  ?????? ????? � ???? ?????? ??????</p>
-                <p class="disclaimer">?????? ??????? ??????? ????? ???</p>
+                <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+                <p class="disclaimer">لأغراض الترفيه واكتشاف الذات فقط</p>
             </div>
         </div>
     </footer>
@@ -1520,7 +1565,7 @@
             if (btn && menu) {
                 btn.addEventListener('click', () => {
                     menu.classList.toggle('active');
-                    btn.textContent = menu.classList.contains('active') ? '?' : '?';
+                    btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
                 });
             }
         });

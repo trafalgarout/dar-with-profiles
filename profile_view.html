@@ -435,6 +435,140 @@
                 justify-content: center;
             }
         }
+    
+        /* HEADER STYLES */
+        .main-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        .header-content { display: flex; align-items: center; justify-content: space-between; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .logo { display: flex; align-items: center; text-decoration: none; }
+        .nav-menu { display: flex; gap: 20px; align-items: center; }
+        .nav-link { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 0.95rem; transition: color 0.3s; position: relative; }
+        .nav-link:hover { color: var(--primary); }
+        .header-actions { display: flex; gap: 15px; align-items: center; }
+        .search-box { position: relative; display: flex; align-items: center; background: #f1f5f9; border-radius: 30px; padding: 5px 15px; border: 2px solid transparent; transition: all 0.3s; }
+        .search-box:focus-within { border-color: var(--primary); background: white; }
+        .search-box input { border: none; background: transparent; outline: none; padding: 5px; width: 120px; font-size: 0.85rem; }
+        .cta-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 8px 20px; border-radius: 30px; text-decoration: none; font-weight: 800; transition: transform 0.3s; font-size: 0.9rem; }
+        .cta-btn:hover { transform: translateY(-2px); }
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark); }
+
+        /* DROPDOWN STYLES */
+        .nav-item.dropdown { position: relative; }
+        .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: white; min-width: 240px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); z-index: 1100; border-radius: 15px; padding: 10px 0; flex-direction: column; border: 1px solid #f1f5f9; animation: dropdownFade 0.3s ease; }
+        @keyframes dropdownFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-item.dropdown:hover .dropdown-content { display: flex; }
+        .dropdown-content a { color: var(--dark); padding: 10px 20px; text-decoration: none; font-weight: 600; transition: all 0.3s; font-size: 0.9rem; display: flex; align-items: center; gap: 10px; text-align: right; }
+        .dropdown-content a:hover { background-color: #f8fafc; color: var(--primary); padding-right: 25px; }
+
+        @media (max-width: 900px) {
+            .nav-menu, .search-box { display: none; }
+            .mobile-menu-btn { display: block; }
+            .nav-menu.active { display: flex !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-radius: 0 0 30px 30px; }
+            .nav-item.dropdown.open .dropdown-content { display: flex !important; position: static; box-shadow: none; width: 100%; background: #f1f5f9; border-radius: 10px; margin-top: 10px; }
+        }
+
+    
+        /* FOOTER STYLES */
+        .main-footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+            margin-top: 80px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-right: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            margin-top: 10px;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
     </style>
 </head>
 
@@ -442,8 +576,10 @@
 
     <!-- GLOBAL HEADER -->
     <header class="main-header">
-        <div class="header-content">
-            <a href="index.html" class="logo"><img src="LOGO.png" alt="كويزات عربية" style="height: 50px; width: auto;"></a>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="LOGO.png" alt="كويزات عربية" style="height: 45px; width: auto;">
+            </a>
 
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">الرئيسية</a>
@@ -455,7 +591,7 @@
                     <div class="dropdown-content">
                         <a href="index.html#men">للشباب</a>
                         <a href="index.html#women">للبنات</a>
-                        <a href="#entertainment">ترفيه</a>
+                        <a href="index.html#entertainment">ترفيه</a>
                     </div>
                 </div>
 
@@ -477,14 +613,14 @@
                 </div>
 
                 <a href="wallpapers.html" class="nav-link">خلفيات متحركة</a>
-                <a href="#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
+                <a href="index.html#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
                 <a href="name_compatibility.html" class="nav-link">💑 اختبار توافق الأسماء</a>
             </nav>
 
             <div class="header-actions">
                 <div class="search-box">
                     <input type="text" placeholder="ابحث عن اختبار...">
-                    <button style="background:none;border:none;cursor:pointer;">🔍</button>
+                    <button class="search-btn" style="background:none;border:none;cursor:pointer;">🔍</button>
                 </div>
                 <a href="index.html#men" class="cta-btn">ابدأ الآن</a>
             </div>
@@ -631,7 +767,7 @@
 
     <!-- GLOBAL FOOTER -->
     <footer class="main-footer">
-        <div class="footer-grid">
+        <div class="container footer-grid">
             <div class="footer-col">
                 <div class="logo" style="margin-bottom:15px;">
                     <img src="FAVICON.png" alt="كويزات عربية" style="height: 50px; width: auto;">
@@ -686,8 +822,8 @@
         </div>
 
         <div class="footer-bottom">
-            <div class="container" style="box-shadow:none; min-height:auto; background:transparent; padding-bottom:0;">
-                <p>&copy;  كويزات عربية — جميع الحقوق محفوظة</p>
+            <div class="container">
+                <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
                 <p class="disclaimer">لأغراض الترفيه واكتشاف الذات فقط</p>
             </div>
         </div>
@@ -880,6 +1016,40 @@
                 `;
             }, 600);
         }
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.mobile-menu-btn');
+            const menu = document.querySelector('.nav-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                    btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
+                });
+            }
+            const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+            dropdowns.forEach(dropdown => {
+                const trigger = dropdown.querySelector('.nav-link');
+                if (trigger) {
+                    trigger.addEventListener('click', (e) => {
+                        if (window.innerWidth <= 900) {
+                            e.preventDefault();
+                            dropdown.classList.toggle('open');
+                        }
+                    });
+                }
+            });
+            const searchBtn = document.querySelector('.search-btn');
+            const searchInput = document.querySelector('.search-box input');
+            if (searchBtn && searchInput) {
+                searchBtn.addEventListener('click', () => {
+                    const query = searchInput.value.trim();
+                    if (query) { alert('جاري البحث عن: ' + query); }
+                });
+            }
+        });
     </script>
 
 </body>
