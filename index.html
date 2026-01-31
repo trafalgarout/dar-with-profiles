@@ -357,6 +357,61 @@
             gap: 25px;
         }
 
+        /* VERTICAL STYLE FOR BANAT */
+        #banat .quiz-grid {
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        #banat .card-thumb {
+            aspect-ratio: 2/3;
+        }
+
+        #banat .card-content {
+            padding: 12px;
+        }
+
+        #banat .card-title {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        #banat .view-badge {
+            font-size: 0.75rem;
+            padding: 3px 8px;
+        }
+
+        /* LOAD MORE BUTTON */
+        .load-more-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .load-more-btn {
+            background: white;
+            color: var(--primary);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        .load-more-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(194, 24, 91, 0.3);
+        }
+
+        .load-more-btn.hidden {
+            display: none;
+        }
+
         /* CARDS */
         .quiz-card {
             background: var(--surface);
@@ -776,7 +831,7 @@
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-    
+
         /* HEADER STYLES */
         .main-header {
             background: rgba(255, 255, 255, 0.95);
@@ -788,35 +843,189 @@
             padding: 15px 0;
             transition: all 0.3s ease;
         }
-        .header-content { display: flex; align-items: center; justify-content: space-between; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .logo { display: flex; align-items: center; text-decoration: none; }
-        .nav-menu { display: flex; gap: 20px; align-items: center; }
-        .nav-link { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 0.95rem; transition: color 0.3s; position: relative; }
-        .nav-link:hover { color: var(--primary); }
-        .header-actions { display: flex; gap: 15px; align-items: center; }
-        .search-box { position: relative; display: flex; align-items: center; background: #f1f5f9; border-radius: 30px; padding: 5px 15px; border: 2px solid transparent; transition: all 0.3s; }
-        .search-box:focus-within { border-color: var(--primary); background: white; }
-        .search-box input { border: none; background: transparent; outline: none; padding: 5px; width: 120px; font-size: 0.85rem; }
-        .cta-btn { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 8px 20px; border-radius: 30px; text-decoration: none; font-weight: 800; transition: transform 0.3s; font-size: 0.9rem; }
-        .cta-btn:hover { transform: translateY(-2px); }
-        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark); }
 
-        /* DROPDOWN STYLES */
-        .nav-item.dropdown { position: relative; }
-        .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: white; min-width: 240px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); z-index: 1100; border-radius: 15px; padding: 10px 0; flex-direction: column; border: 1px solid #f1f5f9; animation: dropdownFade 0.3s ease; }
-        @keyframes dropdownFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .nav-item.dropdown:hover .dropdown-content { display: flex; }
-        .dropdown-content a { color: var(--dark); padding: 10px 20px; text-decoration: none; font-weight: 600; transition: all 0.3s; font-size: 0.9rem; display: flex; align-items: center; gap: 10px; text-align: right; }
-        .dropdown-content a:hover { background-color: #f8fafc; color: var(--primary); padding-right: 25px; }
-
-        @media (max-width: 900px) {
-            .nav-menu, .search-box { display: none; }
-            .mobile-menu-btn { display: block; }
-            .nav-menu.active { display: flex !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-radius: 0 0 30px 30px; }
-            .nav-item.dropdown.open .dropdown-content { display: flex !important; position: static; box-shadow: none; width: 100%; background: #f1f5f9; border-radius: 10px; margin-top: 10px; }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: #f1f5f9;
+            border-radius: 30px;
+            padding: 5px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .search-box:focus-within {
+            border-color: var(--primary);
+            background: white;
+        }
+
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            padding: 5px;
+            width: 120px;
+            font-size: 0.85rem;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 800;
+            transition: transform 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+
+        /* DROPDOWN STYLES */
+        .nav-item.dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            min-width: 240px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            z-index: 1100;
+            border-radius: 15px;
+            padding: 10px 0;
+            flex-direction: column;
+            border: 1px solid #f1f5f9;
+            animation: dropdownFade 0.3s ease;
+        }
+
+        @keyframes dropdownFade {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-item.dropdown:hover .dropdown-content {
+            display: flex;
+        }
+
+        .dropdown-content a {
+            color: var(--dark);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-align: right;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f8fafc;
+            color: var(--primary);
+            padding-right: 25px;
+        }
+
+        @media (max-width: 900px) {
+
+            .nav-menu,
+            .search-box {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu.active {
+                display: flex !important;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 30px 30px;
+            }
+
+            .nav-item.dropdown.open .dropdown-content {
+                display: flex !important;
+                position: static;
+                box-shadow: none;
+                width: 100%;
+                background: #f1f5f9;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -847,7 +1056,8 @@
                         أموال الخليج <span style="font-size: 0.8em;">▾</span>
                     </span>
                     <div class="dropdown-content" style="min-width: 280px; padding-top:0;">
-                        <div style="padding: 12px 15px; border-bottom: 1px solid #f1f5f9; font-size: 0.85rem; color: #64748b; background: #f8fafc; border-radius: 12px 12px 0 0; line-height: 1.5;">
+                        <div
+                            style="padding: 12px 15px; border-bottom: 1px solid #f1f5f9; font-size: 0.85rem; color: #64748b; background: #f8fafc; border-radius: 12px 12px 0 0; line-height: 1.5;">
                             كل ما تحتاج معرفته عن المال والتمويل في الخليج العربي
                         </div>
                         <a href="gulf_saudi.html">🇸🇦 السعودية</a>
@@ -2312,7 +2522,23 @@
             </div>
         </section>
 
+
+        <!-- SECTION 4: BANAT -->
+        <section class="category-section" id="banat">
+            <div class="section-header">
+                <h2 class="section-title">تعارف بنات</h2>
+                <span class="badge" style="background:var(--primary);">جديد</span>
+            </div>
+            <div class="quiz-grid" id="banat-grid">
+                <!-- Profiles will be loaded dynamically -->
+            </div>
+            <div class="load-more-container">
+                <button id="load-more-banat" class="load-more-btn">إظهار المزيد</button>
+            </div>
+        </section>
+
         <!-- SECTION 3: ENTERTAINMENT -->
+
         <section class="category-section" id="entertainment">
             <div class="section-header">
                 <h2 class="section-title">اختبارات ترفيهية</h2>
@@ -3027,6 +3253,7 @@
         </div>
     </footer>
 
+    <script src="js/banat_data.js"></script>
     <script>
         // Mobile Menu Toggle
         document.addEventListener('DOMContentLoaded', () => {
@@ -3037,6 +3264,54 @@
                     menu.classList.toggle('active');
                     btn.textContent = menu.classList.contains('active') ? '✕' : '☰';
                 });
+            }
+
+            // Girl Profiles Gallery Logic (Restored)
+            let banatStartIndex = 0;
+            let shuffledBanat = [];
+
+            function loadBanatProfiles(count) {
+                if (typeof banatImages === 'undefined') return;
+                const grid = document.getElementById('banat-grid');
+                const btn = document.getElementById('load-more-banat');
+                if (!grid) return;
+
+                if (shuffledBanat.length === 0) {
+                    shuffledBanat = [...banatImages].sort(() => 0.5 - Math.random());
+                }
+
+                const segment = shuffledBanat.slice(banatStartIndex, banatStartIndex + count);
+                segment.forEach(img => {
+                    const card = document.createElement('a');
+                    card.href = `profile_view.html?img=${encodeURIComponent(img)}`;
+                    card.className = 'quiz-card';
+                    card.style.animation = 'fadeInUp 0.6s ease-out backwards';
+                    card.innerHTML = `
+                        <img src="THUMBNAILS/BANAT/${img}" onerror="this.src='FAVICON.png'" class="card-thumb" alt="Profile">
+                        <div class="card-content">
+                            <div class="card-title">مشاهدة البروفايل</div>
+                            <div class="card-meta">
+                                <span class="view-badge" style="background:#E91E63;">👁️ ${(Math.random() * 100 + 50).toFixed(1)}k</span>
+                                <span class="play-btn">عرض</span>
+                            </div>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+
+                banatStartIndex += segment.length;
+                if (banatStartIndex >= shuffledBanat.length && btn) {
+                    btn.style.display = 'none';
+                }
+            }
+
+            // Initial load (12 profiles as requested)
+            loadBanatProfiles(12);
+
+            // Load more event
+            const loadMoreBtn = document.getElementById('load-more-banat');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', () => loadBanatProfiles(12));
             }
 
             // Mobile Dropdown Toggle
