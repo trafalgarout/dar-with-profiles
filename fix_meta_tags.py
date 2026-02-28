@@ -58,8 +58,9 @@ def fix_meta_tags(directory):
         # Encode spaces in image URL
         # Unquote first to avoid double encoding (e.g., %20 becoming %2520)
         unquoted_img_src = urllib.parse.unquote(img_src)
-        img_url = "https://darlma3rifa.com/" + urllib.parse.quote(unquoted_img_src)
-        page_url = "https://darlma3rifa.com/" + filename
+        # Use safe='/' so we don't encode the directory slashes, which Github Pages dislikes
+        img_url = "https://www.darlma3rifa.com/" + urllib.parse.quote(unquoted_img_src, safe='/')
+        page_url = "https://www.darlma3rifa.com/" + filename
         
         # Replace the <head> meta tags.
         # Sometimes there's spaces or different tags. Use a broad pattern from <!-- SEO & Social Meta Tags --> to </title>
