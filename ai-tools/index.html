@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="استكشف مجموعة من أدوات الذكاء الاصطناعي المجانية لمساعدتك في إنشاء المحتوى، اختيار الأسماء، وتطوير أفكارك.">
+    <title>أدوات الذكاء الاصطناعي – DARLMA3RIFA</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --primary: #c2185b;
+    --secondary: #7b1fa2;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --surface: #ffffff;
+    --accent: #ffd700;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    direction: rtl;
+}
+
+/* NEW HEADER STYLES */
+.main-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--dark);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo .highlight {
+    color: var(--primary);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f1f5f9;
+    border-radius: 30px;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.search-box:focus-within {
+    border-color: var(--primary);
+    background: white;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    font-family: inherit;
+    width: 150px;
+    font-size: 0.9rem;
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(194, 24, 91, 0.3);
+    transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+/* DROPDOWN STYLES */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    min-width: 240px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    z-index: 1100;
+    border-radius: 15px;
+    padding: 10px 0;
+    flex-direction: column;
+    border: 1px solid #f1f5f9;
+    animation: dropdownFade 0.3s ease;
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Mobile active state for dropdowns */
+.nav-item.dropdown.open .dropdown-content {
+    display: flex;
+    position: static;
+    box-shadow: none;
+    background: #f8fafc;
+    border: none;
+    padding-right: 20px;
+}
+
+.dropdown-content a {
+    color: var(--dark);
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8fafc;
+    color: var(--primary);
+    padding-right: 25px;
+}
+
+/* FOOTER STYLES */
+.main-footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 0 20px;
+    margin-top: 80px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-right: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.social-icon:hover {
+    background: var(--primary);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ai-tools/style.css */
+:root {
+    --primary: #c2185b;
+    --secondary: #7b1fa2;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --surface: #ffffff;
+    --accent: #ffd700;
+}
+
+.tool-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.breadcrumb-nav {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 10px 24px;
+    border-radius: 100px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    gap: 12px;
+    list-style: none;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.breadcrumb-item a {
+    color: #64748b;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary);
+}
+
+.breadcrumb-item.active {
+    color: var(--dark);
+    font-weight: 900;
+}
+
+.breadcrumb-sep {
+    color: #cbd5e1;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 2px;
+}
+
+.breadcrumb-icon {
+    font-size: 1.1rem;
+}
+
+.tool-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tool-header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+.tool-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+.tool-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(194, 24, 91, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.generate-btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(194, 24, 91, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(194, 24, 91, 0.4);
+}
+
+.results-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 15px;
+    border: 1px dashed #cbd5e1;
+    min-height: 100px;
+}
+
+.result-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.copy-btn {
+    background: var(--light);
+    border: 1px solid #e2e8f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.adsense-placeholder {
+    background: #f1f5f9;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 10px;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    border: 1px solid #e2e8f0;
+}
+
+.faq-section {
+    margin-top: 60px;
+}
+
+.faq-item {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.faq-question {
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.related-tools {
+    margin-top: 60px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tool-item-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+}
+
+.tool-item-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-item-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+</style>
+    <style>
+        .tools-listing {
+            padding: 60px 0;
+            background: var(--light);
+        }
+        .listing-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .listing-header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+        .listing-header p {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .tool-card-custom {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid transparent;
+            height: 100%;
+        }
+        .tool-card-custom:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(194, 24, 91, 0.1);
+            border-color: var(--primary);
+        }
+        .tool-thumbnail {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            flex-grow: 1;
+        }
+        .tool-card-custom:hover .tool-thumbnail {
+            transform: scale(1.03);
+        }
+        .tool-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .tool-name {
+            display: none; /* Hidden to emphasize portrait thumbnail */
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        .tool-desc {
+            display: none; /* Hidden to emphasize portrait thumbnail */
+            font-size: 1rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+        .use-tool-btn {
+            background: #f1f5f9;
+            color: var(--primary);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 800;
+            transition: all 0.3s ease;
+        }
+        .tool-card-custom:hover .use-tool-btn {
+            background: var(--primary);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+                <header class="main-header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo">
+                <img src="../LOGO.png?v=3" alt="كويزات عربية" style="height: 45px; width: auto;">
+            </a>
+
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">الرئيسية</a>
+
+                <div class="nav-item dropdown">
+                    <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        كويزات <span style="font-size: 0.8em;">▾</span>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="../index.html#men">للشباب</a>
+                        <a href="../index.html#women">للبنات</a>
+                        <a href="../index.html#entertainment">ترفيه</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        الذكاء الاصطناعي <span style="font-size: 0.8em;">▾</span>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="index.html">أدوات الذكاء الاصطناعي</a>
+                        <a href="username-generator.html">مولد أسماء المستخدمين</a>
+                        <a href="business-name-generator.html">مولد أسماء شركات</a>
+                        <a href="name-compatibility.html">اختبار توافق الأسماء</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        أموال الخليج <span style="font-size: 0.8em;">▾</span>
+                    </span>
+                    <div class="dropdown-content" style="min-width: 280px; padding-top:0;">
+                        <div style="padding: 12px 15px; border-bottom: 1px solid #f1f5f9; font-size: 0.85rem; color: #64748b; background: #f8fafc; border-radius: 12px 12px 0 0; line-height: 1.5;">
+                            كل ما تحتاج معرفته عن المال والتمويل في الخليج العربي
+                        </div>
+                        <a href="../gulf_saudi.html">🇸🇦 السعودية</a>
+                        <a href="../gulf_uae.html">🇦🇪 الإمارات</a>
+                        <a href="../gulf_qatar.html">🇶🇦 قطر</a>
+                        <a href="../gulf_kuwait.html">🇰🇼 الكويت</a>
+                        <a href="../gulf_bahrain.html">🇧🇭 البحرين</a>
+                        <a href="../gulf_oman.html">🇴🇲 عمان</a>
+                    </div>
+                </div>
+
+                <a href="../wallpapers.html" class="nav-link">خلفيات متحركة</a>
+                <a href="../index.html#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن اختبار...">
+                    <button class="search-btn" style="background:none;border:none;cursor:pointer;">🔍</button>
+                </div>
+                <a href="../index.html#men" class="cta-btn">ابدأ الآن</a>
+            </div>
+
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+        <nav class="breadcrumb-nav">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html"><span class="breadcrumb-icon">🏠</span> الرئيسية</a></li>
+                <li class="breadcrumb-sep">/</li>
+                <li class="breadcrumb-item active">أدوات الذكاء الاصطناعي</li>
+            </ul>
+        </nav>
+
+    <main class="tools-listing">
+        <div class="container">
+            <div class="listing-header">
+                <h1>أدوات الذكاء الاصطناعي</h1>
+                <p>مجموعة أدواتنا الذكية المصممة لمساعدتك في إنجاز مهامك بسرعة وإبداع، مجاناً وبالكامل عبر متصفحك.</p>
+            </div>
+
+            <div class="tools-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Tool 1 -->
+                <a href="username-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/username-generator.png?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد أسماء المستخدمين</h2>
+                    <p class="tool-desc">أنشئ أسماء مستخدمين فريدة وجذابة لمنصات التواصل الاجتماعي والألعاب في ثوانٍ.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 2 -->
+                <a href="business-name-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/business-name-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد أسماء الشركات</h2>
+                    <p class="tool-desc">ابحث عن الاسم المثالي لشركتك الناشئة أو مشروعك الجديد مع اقتراحات ذكية.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 3 -->
+                <a href="instagram-bio-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/instagram-bio-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد بايو انستقرام</h2>
+                    <p class="tool-desc">احصل على سيرة ذاتية (Bio) احترافية وجذابة لبروفايلك على انستقرام.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 4 -->
+                <a href="blog-title-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/blog-title-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد عناوين المقالات</h2>
+                    <p class="tool-desc">عناوين جذابة ومتوافقة مع السيو لمقالاتك ومدوناتك لزيادة المشاهدات.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 5 -->
+                <a href="youtube-title-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/youtube-title-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد عناوين يوتيوب</h2>
+                    <p class="tool-desc">حول أفكار فيديوهاتك إلى عناوين مثيرة ترفع نسبة النقر والظهور (CTR).</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 6 -->
+                <a href="hashtag-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/hashtag-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد هاشتاقات</h2>
+                    <p class="tool-desc">أفضل الهاشتاقات المختارة للوصول لترند وجمهور أكبر على السوشيال ميديا.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 7 -->
+                <a href="startup-ideas-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/startup-ideas-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد أفكار مشاريع</h2>
+                    <p class="tool-desc">اكتشف فرص استثمارية مبتكرة وأفكار شركات ناشئة تناسب شغفك وطموحك.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 8 -->
+                <a href="study-plan-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/study-plan-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد خطة دراسية</h2>
+                    <p class="tool-desc">جدول زمني ذكي ومنظم لمساعدتك في التفوق وتغطية منهجك بسهولة.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 9 -->
+                <a href="resume-summary-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/resume-summary-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد ملخص السيرة الذاتية</h2>
+                    <p class="tool-desc">نبذة احترافية (Summary) تلفت انتباه مديري التوظيف وتبرز مهاراتك.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 10 -->
+                <a href="password-generator.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/password-generator.jpeg?v=3" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">مولد كلمات مرور</h2>
+                    <p class="tool-desc">أنشئ رموزاً معقدة وغير قابلة للاختراق لحماية حساباتك الرقمية بكل أمان.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+
+                <!-- Tool 11 -->
+                <a href="name-compatibility.html" class="tool-card-custom">
+                    <img src="../THUMBNAILS/TOOLS/name-compatibility.jpeg?v=4" alt="Tool Thumbnail" class="tool-thumbnail">
+                    <h2 class="tool-name">اختبار توافق الأسماء</h2>
+                    <p class="tool-desc">اكتشف نسبة التوافق والانسجام بينك وبين من تحب من خلال تحليل الأسماء بدقة.</p>
+                    <span class="use-tool-btn">استخدم الأداة</span>
+                </a>
+            </div>
+            
+            <div align="center" style="margin: 25px 0;">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6865939387108271"
+                     data-ad-slot="8984152115"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </main>
+
+                <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom:15px;">
+                    <img src="../FAVICON.png?v=3" alt="كويزات عربية" style="height: 50px; width: auto;">
+                </div>
+                <p style="color:#cbd5e1;line-height:1.6;">منصة ترفيهية تعليمية تساعدك على اكتشاف نفسك وفهم علاقاتك بشكل أفضل من خلال اختبارات ممتعة ودقيقة.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>اكتشف</h3>
+                <ul class="footer-links">
+                    <li><a href="../index.html#men">الأكثر رواجاً</a></li>
+                    <li><a href="../index.html#men">جديدنا</a></li>
+                    <li><a href="../index.html#men">اختبارات الحب</a></li>
+                    <li><a href="../index.html#men">تحليل الشخصية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>معلومات</h3>
+                <ul class="footer-links">
+                    <li><a href="../about.html">من نحن</a></li>
+                    <li><a href="../privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="../terms.html">شروط الاستخدام</a></li>
+                    <li><a href="../contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 كويزات عربية — جميع الحقوق محفوظة</p>
+                <p class="disclaimer">لأغراض الترفيه واكتشاف الذات فقط</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -17,7 +17,18 @@ new_nav_menu = '''<nav class="nav-menu">
                     <div class="dropdown-content">
                         <a href="index.html#men">للشباب</a>
                         <a href="index.html#women">للبنات</a>
-                        <a href="#entertainment">ترفيه</a>
+                        <a href="index.html#entertainment">ترفيه</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <span class="nav-link" style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        الذكاء الاصطناعي <span style="font-size: 0.8em;">▾</span>
+                    </span>
+                    <div class="dropdown-content">
+                        <a href="ai-tools/index.html">أدوات الذكاء الاصطناعي</a>
+                        <a href="ai-tools/username-generator.html">مولد أسماء المستخدمين</a>
+                        <a href="ai-tools/business-name-generator.html">مولد أسماء شركات</a>
                     </div>
                 </div>
 
@@ -39,7 +50,7 @@ new_nav_menu = '''<nav class="nav-menu">
                 </div>
 
                 <a href="wallpapers.html" class="nav-link">خلفيات متحركة</a>
-                <a href="#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
+                <a href="index.html#banat" class="nav-link" style="color:#E91E63;font-weight:900;">🔥 تعارف بنات</a>
                 <a href="name_compatibility.html" class="nav-link">💑 اختبار توافق الأسماء</a>
             </nav>'''
 
